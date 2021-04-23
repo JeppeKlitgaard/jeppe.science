@@ -112,7 +112,7 @@ copyright_license:
   allow_commercial: true
   notice: >-
     Except as otherwise noted, this work is licensed under {license}, and code
-    samples are licensed under the MIT License.
+    samples are licensed under the [MIT License](https://opensource.org/licenses/MIT).
 abstract_length: 135
 plugins_js: []
 avatar:
