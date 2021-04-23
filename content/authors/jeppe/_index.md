@@ -86,7 +86,7 @@ I am an undergraduate physics student at Cambridge,
 having uprooted from the comfortable life of rural Denmark
 and moved across the North Sea to Cambridge 📍.
 
-Prior to starting my studies I taught for ≈ 2 years in the Danish public school system, a large portion of which was with [ASD](https://en.wikipedia.org/wiki/Autism_spectrum) students. 👨‍🏫
+Prior to starting my studies I taught for ≈ 2 years in the Danish public school system, a large portion of which was with [ASD](https://en.wikipedia.org/wiki/Autism_spectrum) students 👨‍🏫.
 
 {{< icon name="eye" pack="far" >}} [View my resumé]({{< ref "/cv" >}}).
 \
