@@ -10,7 +10,7 @@ headless: true
 weight: 30
 
 title: 💭 Recent Thoughts
-subtitle:
+subtitle: _Get them while they're 🔥_
 
 content:
   # Page type to display. E.g. post, talk, publication...

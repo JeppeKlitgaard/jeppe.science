@@ -7,10 +7,10 @@ widget: tag_cloud
 headless: true
 
 # Order that this section appears on the page.
-weight: 120
+weight: 50
 
-title: Popular Topics
-subtitle: ''
+title: ☁ Thought cloud
+subtitle: _Go ahead, join me down here in the rabbit hole 🐰_
 
 content:
 # Choose the taxonomy from `config.toml` to display (e.g. tags, categories)
