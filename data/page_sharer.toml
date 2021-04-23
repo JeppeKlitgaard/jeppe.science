@@ -1,6 +1,23 @@
 # Page Sharer
 # Documentation: https://sourcethemes.com/academic/docs/customization/#page-sharer
 
+
+[[buttons]]
+  id = "reddit"
+  url = "https://reddit.com/submit?url={url}&title={title}"
+  title = "Reddit"
+  icon_pack = "fab"
+  icon = "reddit-alien"
+  enable = true
+
+[[buttons]]
+  id = "email"
+  url = "mailto:?subject={title}&body={url}"
+  title = "Email"
+  icon_pack = "fas"
+  icon = "envelope"
+  enable = true
+
 [[buttons]]
   id = "twitter"
   url = "https://twitter.com/intent/tweet?url={url}&text={title}"
@@ -17,13 +34,6 @@
   icon = "facebook"
   enable = true
 
-[[buttons]]
-  id = "email"
-  url = "mailto:?subject={title}&body={url}"
-  title = "Email"
-  icon_pack = "fas"
-  icon = "envelope"
-  enable = true
 
 [[buttons]]
   id = "linkedin"
@@ -48,14 +58,6 @@
   icon_pack = "fab"
   icon = "weibo"
   enable = true
-
-[[buttons]]
-  id = "reddit"
-  url = "https://reddit.com/submit?url={url}&title={title}"
-  title = "Reddit"
-  icon_pack = "fab"
-  icon = "reddit-alien"
-  enable = false
 
 [[buttons]]
   id = "pinterest"
