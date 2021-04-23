@@ -24,6 +24,8 @@ interests:
 - 💬 Politics
 - 💻 Programming
 - 🔐 Encryption
+- 📏 Engineering
+- 🔨 DIY
 - 🤓 Outreach
 
 # Education to show in About widget
@@ -78,9 +80,13 @@ email: ""
 highlight_name: false
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am Jeppe and it appears that you've stumbled upon my website 🌐!
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I am an undergraduate physics student at Cambridge,
+having uprooted from the comfortable life of rural Denmark
+and moved across the North Sea to Cambridge 📍.
+
+Prior to starting my studies I taught for ≈ 2 years in the Danish public school system, a large portion of which was with [ASD](https://en.wikipedia.org/wiki/Autism_spectrum) students.
 
 {{< icon name="eye" pack="far" >}} [View my resumé]({{< ref "/cv" >}}).
 \
