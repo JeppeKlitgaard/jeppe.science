@@ -13,7 +13,7 @@ main:
 
   - name: Posts
     parent: Blog
-    url: '/post'
+    url: '/posts'
     weight: 22
 
   - name: Categories
