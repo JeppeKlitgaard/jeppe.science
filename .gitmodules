@@ -1,0 +1,3 @@
+[submodule "static/ProfessionalProfile"]
+	path = static/ProfessionalProfile
+	url = git@github.com:JeppeKlitgaard/ProfessionalProfile.git

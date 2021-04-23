@@ -23,7 +23,7 @@ interests:
 - Politics
 - Programming
 - Encryption
-- Outreach and Communication
+- Outreach
 
 # Education to show in About widget
 education:
@@ -81,4 +81,6 @@ Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="eye" pack="far" >}} {{View my resumé
+\
+{{< icon name="download" pack="fas" >}} {{< staticref "ProfessionalProfile/cv.pdf" "newtab" >}}Download my resumé{{< /staticref >}}.
