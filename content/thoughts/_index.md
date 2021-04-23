@@ -1,5 +1,5 @@
 ---
-title: Thoughts
+title: 💭 Thoughts
 cms_exclude: true
 
 # View.
