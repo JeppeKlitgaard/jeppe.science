@@ -18,12 +18,13 @@ bio: My research interests include distributed robotics, mobile computing and pr
 
 # Interests to show in About widget
 interests:
-- Physics
-- Science
-- Politics
-- Programming
-- Encryption
-- Outreach
+- 💫 Physics
+- 🧠 Math
+- 🔬 Science
+- 💬 Politics
+- 💻 Programming
+- 🔐 Encryption
+- 🤓 Outreach
 
 # Education to show in About widget
 education:
