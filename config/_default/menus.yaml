@@ -8,21 +8,21 @@ main:
     url: '#about'
     weight: 10
 
-  - name: Blog
+  - name: Thoughts
     weight: 20
 
   - name: Posts
-    parent: Blog
-    url: '/posts'
+    parent: Thoughts
+    url: '/thoughts'
     weight: 22
 
   - name: Categories
-    parent: Blog
+    parent: Thoughts
     url: '/categories'
     weight: 24
 
   - name: Tags
-    parent: Blog
+    parent: Thoughts
     url: '/tags'
     weight: 24
 
