@@ -1,6 +1,6 @@
 <div class="container d-flex justify-content-center" style="width: 100%; height: 100vh">
 <object data='{{ .Get "url" }}#' type="application/pdf" width="100%" height="100%">
-<iframe src="https://docs.google.com/viewer?url=${abs_link(src)}&embedded=true"></iframe>
+<iframe src='https://docs.google.com/viewer?url={{ .Get "url" | absURL }}&embedded=true'></iframe>
 </object>
 </div>
 

@@ -23,5 +23,5 @@
 # HTTP header stuff
 [[headers]]
   for = "/*"
-  [headers.value]
+  [headers.values]
     X-Frame-Options = "SAMEORIGIN"
