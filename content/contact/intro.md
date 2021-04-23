@@ -2,6 +2,9 @@
 headless: true
 
 title: 💬 Contact
+subtitle: >-
+    _I prefer most of my communication to take place in a setting where_
+    ☕ _is involved, but failing that e-mail is okay._
 weight: 10
 ---
 
