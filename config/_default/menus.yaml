@@ -8,9 +8,24 @@ main:
     url: '#about'
     weight: 10
 
-  - name: Posts
-    url: '/post'
+  - name: Blog
     weight: 20
+
+  - name: Posts
+    parent: Blog
+    url: '/post'
+    weight: 22
+
+  - name: Categories
+    parent: Blog
+    url: '/categories'
+    weight: 24
+
+  - name: Tags
+    parent: Blog
+    url: '/tags'
+    weight: 24
+
 
   - name: Career
     url: '/career'
