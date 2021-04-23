@@ -8,3 +8,6 @@
 <p class="text-center">
     You can also <a href='{{ .Get "url" }}' download>download the PDF <i class="far fa-file-pdf"></i></a>
 </p>
+<p class="text-center">
+    Or alternatively <a href='https://docs.google.com/viewer?url={{ .Get "url" | absURL }}' target="_blank"> view in Google Docs <i class="far fa-eye"></i></a>
+</p>
