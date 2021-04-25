@@ -8,36 +8,31 @@ main:
     url: '/'
     weight: 10
 
-  - name: Thoughts
+  - name: Career
+    url: '/career'
     weight: 20
+
+  - name: Thoughts
+    weight: 30
 
   - name: Posts
     parent: Thoughts
     url: '/thoughts'
-    weight: 22
+    weight: 32
 
   - name: Categories
     parent: Thoughts
     url: '/categories'
-    weight: 24
+    weight: 34
 
   - name: Tags
     parent: Thoughts
     url: '/tags'
-    weight: 24
-
-
-  - name: Career
-    url: '/career'
-    weight: 30
-
-  - name: Projects
-    url: '#projects'
-    weight: 30
+    weight: 36
 
   - name: Contact
     url: '/contact'
-    weight: 60
+    weight: 40
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
