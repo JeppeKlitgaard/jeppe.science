@@ -1,0 +1,61 @@
+// $emoji_system: "OpenMoji";
+$emoji_system: "Noto Color Emoji";
+// $emoji_system: "Twemoji";
+
+$emoji_font: "segoe ui emoji";
+
+@if $emoji_system == "OpenMoji" {
+    $font_url: "/fonts/OpenMoji-Color.ttf";
+    $emoji_font: $emoji_system;
+
+    @font-face {
+        font-family: $emoji_system;
+        src: url($font_url);
+    }
+
+} @else if $emoji_system == "Noto Color Emoji" {
+    $font_url: "https://gitcdn.xyz/repo/googlefonts/noto-emoji/master/fonts/NotoColorEmoji.ttf";
+    $emoji_font: $emoji_system;
+
+    @font-face {
+        font-family: $emoji_system;
+        src: url($font_url) format("truetype");
+    }
+
+} @else if $emoji_system == "Twemoji" {
+    $emoji_font: "segoe ui emoji";
+
+    img.emoji {
+        height: 1em;
+        width: 1em;
+        margin: 0 .05em 0 .1em;
+        vertical-align: -0.1em;
+        display: inline
+    }
+}
+
+// Ugly overrides
+html, navbar-light {
+    font-family: sans-serif, $emoji_font;
+}
+
+body, .tooltip, popover {
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, liberation sans, sans-serif, $emoji_font, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+}
+
+h1, h2, h3, h4, h5, h6,
+.section-subheading {
+    font-family: montserrat, sans-serif, $emoji_font;
+}
+
+pre, code, kbd, samp, .text-monospace {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, liberation mono, courier new, monospace, $emoji_font;
+}
+
+pre, code {
+    font-family: roboto mono, monospace, $emoji_font;
+}
+
+.sidebar-search-shortcut {
+    font-family: Arial, helvetica neue, Helvetica, sans-serif, $emoji_font;
+}
