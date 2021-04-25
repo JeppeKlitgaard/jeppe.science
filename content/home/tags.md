@@ -10,7 +10,7 @@ headless: true
 weight: 50
 
 title: ☁ Thought cloud
-subtitle: _Go ahead, join me down here in the rabbit hole 🐰_
+subtitle: _Go ahead, join me down here in the rabbit hole_ 🐰
 
 content:
 # Choose the taxonomy from `config.toml` to display (e.g. tags, categories)

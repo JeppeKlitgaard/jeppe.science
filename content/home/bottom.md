@@ -3,7 +3,8 @@ title: 🎉 You made it!
 subtitle: |
   _Thank for you reading all the way to the end._
 
-  _Please accept this cute puppy picture as a token of my appreciation._
+  _Please accept this cute puppy picture as a token of my appreciation_ 🙏
+
 widget: blank
 
 weight: 60
