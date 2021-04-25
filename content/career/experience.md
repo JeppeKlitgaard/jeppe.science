@@ -7,10 +7,10 @@ widget: experience
 headless: true
 
 # Order that this section appears on the page.
-weight: 40
+weight: 20
 
-title: Experience
-subtitle:
+title: 📃 Experience
+subtitle: _Among other things - Have a peek at my CV for more!_
 
 # Date format for experience
 #   Refer to https://wowchemy.com/docs/customization/#date-format
