@@ -36,8 +36,8 @@ experience:
 
       Supervisors:
 
-      - [Prof Pietro Cicuta](TODO) (Department of Physics)
-      - [Prof Pietro Lio](TODO) (Department of Computer Science)
+      - <a href="http://people.bss.phy.cam.ac.uk/~pc245/" target="_blank">Professor Pietro Cicuta</a> (Department of Physics)
+      - <a href="https://www.cl.cam.ac.uk/~pl219/" target="_blank">Professor Pietro Liò</a> (Department of Physics)
 
   - title: Software Engineering Intern
     company: Intropic Limited
