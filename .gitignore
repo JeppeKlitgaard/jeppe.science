@@ -9,3 +9,12 @@ node_modules/
 
 # Local Netlify folder
 .netlify
+
+# Latex
+*gz
+*aux
+*latexmk
+*log
+*synctex*
+*fls
+*out
