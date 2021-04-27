@@ -49,7 +49,7 @@ social:
 
 - icon: comment-dots
   icon_pack: far
-  link: '/#contact'
+  link: '/contact'
 
 - icon: github
   icon_pack: fab
