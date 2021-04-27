@@ -16,7 +16,7 @@ using a flurry of flattering compliments and extravagant praise.
 As I have yet to join such esteemed company, I will have to introduce myself - perhaps with rather less pomp ✨.
 
 My interests are frustratingly broad,
-ranging from the ["harder"](https://en.wikipedia.org/wiki/Hard_and_soft_science) parts of natural science (_duh_) and computer science and all the way across to the squishy and cuddly social sciences with a particular emphesis on political and societal issues - _could I perhaps interest you in a discussion about the merits of social-liberalism?_ 🤓
+ranging from the "[harder](https://en.wikipedia.org/wiki/Hard_and_soft_science)" parts of natural science (_duh_) and computer science and all the way across to the squishy and cuddly social sciences with a particular emphesis on political and societal issues - _could I perhaps interest you in a discussion about the merits of social-liberalism?_ 🤓
 
 Outside of academia I am a keen woodworker, amateur electrician and overall entirely incompetent DIY'er. 🔨💡
 
