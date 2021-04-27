@@ -90,4 +90,4 @@ Prior to starting my studies I taught for ≈ 2 years in the Danish public schoo
 
 {{< icon name="eye" pack="far" >}} [View my resumé]({{< ref "/cv" >}}).
 \
-{{< icon name="download" pack="fas" >}} {{< staticref "ProfessionalProfile/cv.pdf" "newtab" >}}Download my resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} {{< staticref "profile/cv.pdf" "newtab" >}}Download my resumé{{< /staticref >}}.

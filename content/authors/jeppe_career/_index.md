@@ -92,4 +92,4 @@ a 👀 at my CV if you want to learn more.
 
 {{< icon name="eye" pack="far" >}} [View my resumé]({{< ref "/cv" >}}).
 \
-{{< icon name="download" pack="fas" >}} {{< staticref "ProfessionalProfile/cv.pdf" "newtab" >}}Download my resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} {{< staticref "profile/cv.pdf" "newtab" >}}Download my resumé{{< /staticref >}}.

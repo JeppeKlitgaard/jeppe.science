@@ -8,4 +8,4 @@ If you're still stuck in the Stone Ages browser-wise, you can download it instea
 
 ---
 
-{{< pdf url="/ProfessionalProfile/cv.pdf" >}}
+{{< pdf url="/profile/cv.pdf" >}}
