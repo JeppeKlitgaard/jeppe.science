@@ -25,8 +25,8 @@ experience:
 
   - title: Summer Research Internship
     company: Cavendish Laboratory, University of Cambridge
-    company_url: 'https://intropic.io/'
-    company_logo: intropic_io
+    company_url: 'https://www.phy.cam.ac.uk/'
+    company_logo: uni_of_cam
     location: Cambridge, United Kingdom
     date_start: '2021-06-01'
     date_end: '2021-09-01'
