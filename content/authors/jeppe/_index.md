@@ -45,7 +45,7 @@ education:
 social:
 - icon: envelope
   icon_pack: far
-  link: 'mailto:hello@jeppe.science'
+  link: 'mailto:hi@jeppe.science'
 
 - icon: comment-dots
   icon_pack: far
