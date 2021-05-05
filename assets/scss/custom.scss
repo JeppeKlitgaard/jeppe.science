@@ -1,1 +1,5 @@
-@import 'emoji_font'
+@import 'emoji_font';
+
+.fig-center > div > div > img {
+    margin: auto;
+}

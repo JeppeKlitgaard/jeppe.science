@@ -11,9 +11,15 @@ weight: 60
 ---
 
 <p style="text-align: center">
-<img src="/images/balaton_puppy_biter.jpg" style="margin: auto">
 
-Cute puppy that got a lot of cuddles in rural Hungary.
-"Harapos Kutya" allegedly means something like: _dog bites_. (It did not)
+{{< figure
+  src="/images/balaton_puppy_biter.jpg"
+  class="fig-center"
+  lightbox="false"
+  caption=`Cute puppy that got a lot of cuddles in rural Hungary.
+  <br/>
+  "Harapos Kutya" allegedly means something like: _dog bites_. (It did not)`
+>}}
+
 
 </p>
