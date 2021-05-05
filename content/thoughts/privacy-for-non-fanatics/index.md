@@ -18,6 +18,7 @@ tags:
 
 categories:
 - Technology
+- Privacy
 
 date: 2021-05-04T17:33:53+01:00
 lastmod: 2021-05-04T17:33:53+01:00
