@@ -24,6 +24,13 @@
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
 
+# Redirects
+# [[redirects]]
+#   from = "http://jeppe.science/"
+#   to = "https://jeppe.science/"
+#   status = 301
+#   force = true #COMMENT: ensure that we always redirect
+
 # Plugins
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
