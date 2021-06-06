@@ -134,6 +134,9 @@ It is hardly a show-stopper, UX-wise, but it is free, open-source, and OS-agnost
 
 For e-mail I eventually settled on just moving off GMail to the privacy-oriented provider [mailbox.org](https://mailbox.org/en/).
 
+__Edit: I had poor experiences with mailbox.org and their support in particular, I really wouldn't recommend using them.
+See my post about it here: [Why I Fled Mailbox and Mailfence for Protonmail]({{< relref "/thoughts/why-i-fled-mailbox-for-protonmail" >}})__
+
 While security is probably better when using [ProtonMail](https://protonmail.com/) or [Tutanota](https://tutanota.com/),
 I wanted something that _simply works_ and is based on the existing, widely used standards (even if these standards are horrible and inherently insecure).
 
