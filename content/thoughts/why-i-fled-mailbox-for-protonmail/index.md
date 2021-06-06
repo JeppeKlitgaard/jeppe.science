@@ -76,7 +76,7 @@ After another couple of days, taking the total wait for a simple support ticket 
 they finally got back to me. It wasn't quite what I was expecting though – Germans are usually known for their formality and thoroughness,
 but I was left with a short, unhelpful reply written in some fairly broken English. No apologies for, or acknowledgement of, my inconvinence.
 
-While I hadn't been impressed with the dated look of the website, the UX issues with their online application, or the fact that you'd suddenly wander into parts of the application still in German, I didn't feel comfortable staying with [Mailbox.org] after my experience with their support.
+While I hadn't been impressed with the dated look of the website, the UX issues with their online application, or the fact that you'd suddenly wander into parts of the application still in German, it was my experience with their support that broke the camels back - I simply didn't feel comfortable staying with [Mailbox.org].
 
 Additionally, they don't support recurring payments, nor do they _appear_ to remind you when your balance is running out. I was one day from running out of credits when I finally left them, but hadn't gotten any reminder to add my credits to my balance — I dare not think what happens when you run out credits.
 
