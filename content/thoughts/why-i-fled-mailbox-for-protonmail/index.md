@@ -66,6 +66,15 @@ and this would be entirely unmanageable if I were to use individual inboxes on w
 As I was setting up SPF and DKIM on Mailbox.org, I had some problems due to an error in their "knowledge database", which suggests
 using an SPF-type entry to set up SPF. While this might have made sense at the time of writing that entry (presumable refering to [RFC4408]), this document was made obsolete in 2014 with the introduction of [RFC7208]. [RFC4408] was only ever experimental, and in the [RFC7208] specification SPF-type RR's are no longer valid and should be changed to TXT.
 
+> SPF records MUST be published as a DNS TXT (type 16) Resource Record (RR) [RFC1035] only.  
+> [...]  
+> Use of alternative DNS RR types was supported in SPF's experimental phase but has been discontinued.  
+> — [RFC7208 § 3.1](https://datatracker.ietf.org/doc/html/rfc7208#section-3.1)
+
+Note the use of __discontinued__ as opposed to _deprecated_.
+Using SPF RRs is not just discouraged, it is forbidden and invalid — and has never been valid
+except in the experimental RFC!
+
 As a result of using the wrong RR type (by following the mailbox.org guide), I couldn't get Google to
 accept my SPF record, which was obviously not ideal. Eventually I figured out the issue and wanted to highlight this to [Mailbox.org] and filed a ticket with their support.
 
@@ -80,6 +89,16 @@ While I hadn't been impressed with the dated look of the website, the UX issues 
 
 Additionally, they don't support recurring payments, nor do they _appear_ to remind you when your balance is running out. I was one day from running out of credits when I finally left them, but hadn't gotten any reminder to add my credits to my balance — I dare not think what happens when you run out credits.
 
+#### Update (2021-06-14)
+
+Despite me having deleted my account, [Mailbox.org] continues to send me e-mails through their Jira support platform.
+I obviously cannot read or access these since I don't have an account, but I get the nice notification e-mails nonetheless.
+It appears that the case has been closed after no less than 29 days.
+
+Here is the kicker: The knowledge database still reflects a blatantly disallowed configuration that leads
+to failed SPF checks — Despite my helpful reminder 🤦‍♂️. Come on...
+
+#### Steer clear of Mailbox.org!
 
 __I really hope people steer clear of [Mailbox.org] in the future.
 While their heart might be in the right place, they seem very far from a reliable provider,
@@ -124,6 +143,7 @@ you need to use a non-Proton client on mobile.
 
 ProtonMail is the king of mail providers, and with very good reason. 👑
 
+[RFC1035]: https://datatracker.ietf.org/doc/html/rfc1035
 [RFC4408]: https://datatracker.ietf.org/doc/html/rfc4408
 [RFC7208]: https://datatracker.ietf.org/doc/html/rfc7208
 [MailFence]: https://mailfence.com/
