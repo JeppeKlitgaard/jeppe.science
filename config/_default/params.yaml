@@ -127,7 +127,7 @@ breadcrumb:
 comments:
   provider: 'commento'
   commentable:
-    post: true
+    thoughts: true
     book: false
     project: false
     publication: false
