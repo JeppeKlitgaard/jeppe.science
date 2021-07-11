@@ -3,10 +3,11 @@
         display: none;
     }
 </style>
+
 <script>
     var remark_config = {
-      host: 'http://localhost:8081', // hostname of remark server, same as REMARK_URL in backend config, e.g. "https://demo.remark42.com"
-      site_id: 'JeppeScience',
+      host: {{ .Site.Params.comments.remark42.url}}, // hostname of remark server, same as REMARK_URL in backend config, e.g. "https://demo.remark42.com"
+      site_id: {{ .Site.Params.comments.remark42.site}},
       components: ['embed'], // optional param; which components to load. default to ["embed"]
                              // to load all components define components as ['embed', 'last-comments', 'counter']
                              // available component are:
