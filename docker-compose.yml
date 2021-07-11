@@ -3,7 +3,6 @@ version: "3.8"
 
 services:
     remark:
-        build: .
         image: umputun/remark42:latest
         container_name: "remark42"
         hostname: "remark42"
@@ -20,19 +19,21 @@ services:
          - "8081:8080"
 
         env_file:
-            - envs/remark42.env
-            - envs/remark42_overrides.env
+            - ./envs/remark42.env
+            - ./envs/remark42_overrides.env
 
+        labels:
+                - 'traefik.enable=true'
+                - 'traefik.http.routers.comments.rule=Host(`comments.jeppe.science`)'
+                - 'traefik.http.routers.comments.entrypoints=websecure'
+                - 'traefik.http.routers.comments.tls.certresolver=letsencrypt'
 
-        environment:
-            - AUTH_GOOGLE_CID
-            - AUTH_GOOGLE_CSEC
-            - AUTH_GITHUB_CID
-            - AUTH_GITHUB_CSEC
-            - AUTH_FACEBOOK_CID
-            - AUTH_FACEBOOK_CSEC
-            - AUTH_DISQUS_CID
-            - AUTH_DISQUS_CSEC
-            # - ADMIN_PASSWD=password
+        networks:
+            - web
+
         volumes:
             - ./var:/srv/var
+
+networks:
+    web:
+        external: true
