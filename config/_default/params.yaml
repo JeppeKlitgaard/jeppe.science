@@ -125,7 +125,7 @@ breadcrumb:
   page_types:
     book: true
 comments:
-  provider: 'commento'
+  provider: 'remark42'
   commentable:
     thoughts: true
     book: false
