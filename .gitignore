@@ -21,3 +21,4 @@ node_modules/
 
 # Remark42
 envs/remark42_overrides.env
+var/
