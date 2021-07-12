@@ -137,6 +137,9 @@ comments:
     show_count: true
   commento:
     url: ''
+  remark42:
+    url: 'http://localhost:8081'
+    site: 'JeppeScience'
 search:
   provider: wowchemy
   algolia:

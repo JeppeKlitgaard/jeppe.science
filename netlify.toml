@@ -23,6 +23,7 @@
   for = "/*"
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
+    Access-Control-Allow-Origin = "https://comments.jeppe.science"
 
 # Redirects
 # [[redirects]]

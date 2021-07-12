@@ -3,10 +3,11 @@
         display: none;
     }
 </style>
+
 <script>
     var remark_config = {
-      host: 'http://localhost:8081', // hostname of remark server, same as REMARK_URL in backend config, e.g. "https://demo.remark42.com"
-      site_id: 'JeppeScience',
+      host: {{ .Site.Params.comments.remark42.url}}, // hostname of remark server, same as REMARK_URL in backend config, e.g. "https://demo.remark42.com"
+      site_id: {{ .Site.Params.comments.remark42.site}},
       components: ['embed'], // optional param; which components to load. default to ["embed"]
                              // to load all components define components as ['embed', 'last-comments', 'counter']
                              // available component are:
@@ -42,5 +43,59 @@
                          // minimized UI with basic info only
     };
 </script>
+
 <script>!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);</script>
+
 <div id="remark42"></div>
+
+<script>
+var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+var observer = new MutationObserver(function(mutations) {
+
+    if (mutations[0].type === "childList") { // optional
+
+        if (document.querySelector("#remark42 iframe")) {
+
+            console.log("iframe added to dom");
+
+            var iframe = document.querySelector('#remark42 iframe');
+
+            iframe.addEventListener('load', function (e) {
+
+                console.log("iframe content loaded");
+
+                // style iframe element
+                // iframe.style.border = "5px solid aqua";
+
+                var link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = '/css/remark_overrides.css';
+
+                // style.textContent =
+                //   'body {' +
+                //   '  background-color: green;' +
+                //   '  font-weight: italic;' +
+                //   '}'
+                // ;
+
+                console.log(iframe);
+                console.log(iframe.contentDocument);
+                iframe.contentDocument.head.appendChild(link);
+
+                // and disconnect
+                observer.disconnect();
+
+            });
+        }
+        }
+});
+
+var observerConfig = {
+    childList: true,
+};
+
+var targetNode = document.getElementById("remark42");
+observer.observe(targetNode, observerConfig);
+
+</script>
