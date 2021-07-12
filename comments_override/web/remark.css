@@ -1,0 +1,5 @@
+@import '/web-orig/remark.css';
+
+p.root__copyright {
+    display: none;
+}
