@@ -8,7 +8,6 @@
     };
 </script>
 
-<script>!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);</script>
 
 <div id="remark42"></div>
 
@@ -67,15 +66,24 @@
         window.REMARK42.changeTheme(theme);
     }
 
-    let targetNode = document.body
-    let targetWatcher = new ClassWatcher(targetNode, "dark", updateRemarkTheme, updateRemarkTheme);
+    let bodyNode = document.body
+    let classWatcher = new ClassWatcher(bodyNode, "dark", updateRemarkTheme, updateRemarkTheme);
+
+    let divNode = document.querySelector("div#remark42");
+    let iframeWatcher = new MutationObserver((records) => {updateRemarkTheme();});
+    iframeWatcher.observe(divNode, {childList: true});
+
+    window.addEventListener("REMARK42::ready", (event) => {updateRemarkTheme();});
 
     // In case we have class set at beginning
     window.addEventListener('load', (event) => {
-        updateRemarkTheme();
+            updateRemarkTheme();
 
-        // Fix: sometimes we seem to miss this anyway...
-        setTimeout(() => {updateRemarkTheme();}, 500); // ms
-    });
+            // Fix: sometimes we seem to miss this anyway...
+            setTimeout(() => {updateRemarkTheme();}, 500); // ms
+            setTimeout(() => {updateRemarkTheme();}, 3000); // ms
+        });
 
-</script>
+    </script>
+
+<script>!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);</script>
