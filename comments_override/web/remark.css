@@ -1,5 +1,15 @@
 @import '/web-orig/remark.css';
 
+:root {
+    --color7 : #353847;
+    --color8 : #23252f;
+    --color9 : #bbdefb;
+    --color15: #1565c0;
+    --color33: #1565c0;
+    --color47: rgba(21, 101, 192, 0.4);
+}
+
 p.root__copyright {
-    display: none;
+    visibility: hidden;
+    margin-top: 36px;
 }
