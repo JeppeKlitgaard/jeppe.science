@@ -70,7 +70,12 @@
     let targetNode = document.body
     let targetWatcher = new ClassWatcher(targetNode, "dark", updateRemarkTheme, updateRemarkTheme);
 
+    // In case we have class set at beginning
     window.addEventListener('load', (event) => {
         updateRemarkTheme();
+
+        // Fix: sometimes we seem to miss this anyway...
+        setTimeout(() => {updateRemarkTheme();}, 500); // ms
     });
+
 </script>
