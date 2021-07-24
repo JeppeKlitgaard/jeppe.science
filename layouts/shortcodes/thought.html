@@ -1,0 +1,5 @@
+{{ $page := .Site.GetPage (printf "/thoughts/%s" (.Get 0))}}
+
+{{ with $page}}{{ $urlStr := (printf "[%s](%s)" .Title .URL) }}
+    {{ print $urlStr | markdownify}}
+{{ end }}
