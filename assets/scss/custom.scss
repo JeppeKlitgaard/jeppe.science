@@ -3,3 +3,7 @@
 .fig-center > div > div > img {
     margin: auto;
 }
+
+footer.site-footer > p.powered-by:last-child {
+    display: none;
+}
