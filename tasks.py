@@ -6,4 +6,4 @@ def list_(c):
 
 @task
 def new(c, name):
-    c.run(f"hugo new --kind post content/thoughts/{name}")
+    c.run(f"hugo new thoughts/{name}")
