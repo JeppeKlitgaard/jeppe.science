@@ -18,7 +18,7 @@ height: 600px
 
 item:
   - title: Software Engineering
-    overlay_color: '#09F'
+    overlay_color: '#1565c0'
     align: center
 
     content: |
@@ -41,7 +41,7 @@ item:
         </p>
 
   - title: Teaching
-    overlay_color: '#09F'
+    overlay_color: '#1565c0'
     align: center
 
     content: |
