@@ -125,7 +125,7 @@
 
 
 \newcommand{\link}[2]{%
-	{\href{#1}{\textcolor{maincolor!70}{\textbf{#2} \scriptsize{\faLink}}}}
+	{\href{#1}{\textcolor{maincolor!70}{\textbf{#2} \scriptsize{\faLink}}}}%
 }
 
 \newcommand{\urlfor}[1]{%
@@ -196,13 +196,14 @@
 	\sidesection{Languages}
 		\pointskill{\flag{DK.png}}{Danish}{5}
 		\pointskill{\flag{GB.png}}{English}{5}
-		\pointskill{\flag{DE.png}}{German}{3}
+		\pointskill{\flag{DE.png}}{German}{2}
 
 	\sidesection{Hard Skills}
 		\skill{\faPython}{Programming}
 		\skill{\faChartBar}{Data Science}
 		\skill{\faAtom}{Physics}
 		\skill{\faCalculator}{Mathematics}
+		\skill{\faBolt}{Electronics}
 
 
 	\sidesection{Soft Skills}
@@ -228,6 +229,7 @@
 		\pointskill{\faPython}{Python 3}{5}
 		\pointskill{\faLinux}{Linux}{4}
 		\pointskill{\faTerminal}{bash/zsh/fish}{4}
+		\pointskill{\faCogs}{Machine Learning}{3}
 		\pointskill{\faCuttlefish}{C/C++}{3}
 		\pointskill{\faDatabase}{SQL}{3}
 		\pointskill{\faHtml5}{HTML5/CSS3}{3}
@@ -254,6 +256,13 @@
 		\chartlabel{Git}
 		\chartlabel{LaTeX}
 		\chartlabel{Eigen3}
+		\chartlabel{PyTorch}
+		\chartlabel{Arduino}
+		\chartlabel{PlatformIO}
+		\chartlabel{Serial}
+		\chartlabel{Tensorboard}
+		\chartlabel{stable-baselines3}
+		\chartlabel{PettingZoo}
 	\end{sidebarminipage}
 
 %	\begin{figure}\centering
@@ -299,34 +308,44 @@
 \makefrontsidebar
 
 \cvsection{Introduction}
-\large
-Ambitious student with interests in Natural Sciences, Data Science \& Programming, and Society \& Culture.\\
+Ambitious student with interests in Natural, Computer \& Data Sciences, as well as Society \& Culture.\\
 
-I have a teachable and well rounded profile with experiences in organisational, administrative, and technical work
+I have a teachable and well rounded profile with experience in organisational,
+administrative, technical, and academic work
 through a variety of activities including national political work,
-Advisory Board Member of Denmark's Academy of Talented Youth,
-and the European CanSat Competition.\\
+Advisory Board of Denmark's Academy of Talented Youth,
+the European CanSat Competition \&
+internships within FinTech and academia.\\
 
 I thrive in the presence of other passionate individuals.
-\normalsize
 
 \cvsection{Work Experience}
 \cvsectionvspace
 \begin{cvtable}[3]
+	\cvitem{2021}{Research Intern}{University of Cambridge}{
+		10-week summer internship with  \link{https://www.phy.cam.ac.uk/directory/cicuta}{Prof. Pietro Cicuta} and  \link{https://www.cl.cam.ac.uk/~pl219/}{Prof. Pietro Lio} at University of Cambridge.\\
+		Developed and designed \link{https://jeppeklitgaard.github.io/CartER/}{CartER},
+		an open-source and open-hardware physical and simulated cartpole platform
+		for experimentation and investigation of reinforcement learning algorithms.
+	}
+
 	\cvitem{2020}{Software Engineering Intern}{Intropic Limited}{
-		8-week summer internship in a London-based FinTech startup.
-		Introduced and authored a variety of Python projects dealing with REST API development, data processing and created a streaming data pipeline in Kafka/Faust.
-		Collaborated on existing client-facing API's.}
+		8-week summer internship in a London-based FinTech startup.\\
+		Introduced and authored a variety of Python projects dealing with REST API development,
+		data processing and created a streaming data pipeline in Kafka/Faust.
+	}
 
 	\cvitem{Jan. 2018 -- Sep. 2019}{Substitute Teacher}{Ans \& Grauballe Skole}{
-		Fixed temporary position in Ans Skole's Special Education
-section. Previously worked as a regular substitute teacher in the public school section. Primarily
-taught Natural Sciences, English and Mathematics, ages 13 -- 16.}
+		Fixed temporary position in Ans Skole's Special Education section.\\
+		Also worked as a regular substitute teacher in the public school section. Primarily
+taught STEM and English, ages 13 -- 16.
+	}
 
-	\cvitem{2016 -- 2019}{Language Camp Organiser and Teacher}{Rejsby Europæiske Efterskole}{Helped organise the annual Language Camp at Rejsby Europæiske
-Efterskole for 4 consecutive years.}
+	\cvitem{2016 -- 2019}{Language Camp Organiser and Teacher}{Rejsby Europæiske Efterskole}{
+		% Helped organise the annual Language Camp at Rejsby Europæiske
+		% Efterskole for 4 consecutive years.
+	}
 \end{cvtable}
-
 
 \cvsection{Education}
 \cvsubsection{Undergraduate Education}
@@ -334,7 +353,6 @@ Efterskole for 4 consecutive years.}
 \begin{cvtable}[2.0]
 	\cvitem{2019 -- 2022}{BA Natural Sciences}{University of Cambridge, UK}
 		{Bachelor of Science in Physical Natural Sciences with subject choices being Physics and Mathematics.\\
-		\\
 		Student Representative at Cavendish Laboratory (years 1 and 2).
 		}
 \end{cvtable}
@@ -342,20 +360,20 @@ Efterskole for 4 consecutive years.}
 \cvsubsection{Secondary Education}
 \cvsubsectionvspace
 \begin{cvtable}[2.0]
-	\cvitem{2014 -- 2017}{Danish STX}{Silkeborg Gymnasium, Denmark}
-		{Studentereksamen (STX) with Physics A, Chemistry A, Mathematics A.\\
+	\cvitem{2014 -- 2017}{Danish STX}{Silkeborg Gymnasium, Denmark}{
+		Studentereksamen (STX) with Physics A, Chemistry A, Mathematics A.\\
 		Master Classes in Mathematics, Physics, and Chemistry. Part of the CanSat competition team.\\
-		\\
 		GPA: 12.2 / 12.0 (extra credit).
-		}
-	\cvitem{2014 -- 2017}{Academy of Talented Youth}{Denmark}
-		{Extracurricular organisation providing advanced classes, lectures,
+	}
+	\cvitem{2014 -- 2017}{Academy of Talented Youth}{Denmark}{
+		Extracurricular organisation providing advanced classes, lectures,
 		and camps for academically gifted students in collaboration with universities
 		and leading companies.\\
 		\\
 		Elected as Student Representative for the Advisory Board of Academy of Talented Youth, where I
 represented roughly 200 of the region's most talented students and helped set out new initiatives
-for the organisation.}
+for the organisation.
+	}
 \end{cvtable}
 
 
@@ -399,6 +417,10 @@ of the Social-Liberal Youth Party of Denmark.}
 \cvsection{References}
 \cvsubsectionvspace
 \begin{cvtable}[2.0]
+	\cvitem{2021}{Research Intern}{University of Cambridge}{
+		Letter of recommendation available upon request.
+	}
+
 	\cvitem{2020}{Software Engineering Intern}{Intropic Limited}{
 		Letter of recommendation available here: \link{\urlfor{references/intropic.pdf}}{\pdf intropic.pdf}.
 	}

@@ -53,7 +53,7 @@
 \definecolor{cvgreen}{HTML}{007170}
 \definecolor{cvred}{HTML}{8B0000}
 \definecolor{cvsidecolor}{HTML}{E7E7E7}
-\definecolor{cvsectioncolor}{HTML}{0395DE}
+\definecolor{cvsectioncolor}{HTML}{0E5484}  % 0395DE
 \definecolor{cvsubsectioncolor}{HTML}{4D4D4D}
 % set default values
 \colorlet{maincolor}{cvblue}
@@ -256,7 +256,7 @@
 % \titleformat{<command>}[<shape>]{<format>}{<label>}{<sep>}{<before>}[<after>]
 \newcommand*{\cvsection}[1]{\section*{#1}}
 \titleformat{\section}%
-	{\color{sectioncolor}\normalfont\bfseries\LARGE}{}{0pt}{}
+	{\color{sectioncolor}\normalfont\bfseries\Large}{}{0pt}{}
 \titlespacing*{\section}{0pt}{1.5ex}{1ex}
 
 % grey subsection style for right column
