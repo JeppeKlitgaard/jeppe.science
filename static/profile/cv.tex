@@ -1,7 +1,9 @@
+% !TEX program = xelatex
+
+% Also works with luatex, but not pdftex
+
 %! CV - Jeppe Klitgaard
 %! Last updated: 2020-07-11
-
-%! Compile with XeLaTeX+MakeIndex+BibTeX environment
 
 % FortySecondsCV LaTeX template
 % Copyright © 2019-2020 René Wirnata <rene.wirnata@pandascience.net>
@@ -57,6 +59,9 @@
 % \usepackage{setspace}
 % \setstretch{1.1}
 
+% Ignore underful hbox warnings
+\hbadness=10000
+
 % improve word spacing and hyphenation
 \usepackage{microtype}
 \usepackage{ragged2e}
@@ -66,29 +71,19 @@
 % \usepackage[none]{hyphenat}
 
 % take care of proper font encoding
-\ifxetexorluatex
-	\usepackage{fontspec}
-	\defaultfontfeatures{Ligatures=TeX}
-	% \newfontfamily\headingfont[Path=fonts/]{segoeuib.ttf} % use local font
-\else
-	\usepackage[utf8]{inputenc}
-	\usepackage[T1]{fontenc}
-\fi
+% ! Actually when using devicons we require luatex/XeTeX
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+% \newfontfamily\headingfont[Path=fonts/]{segoeuib.ttf} % use local font
+
+% % Extra font
+% % ! Requires devicons to be installed. See: github.com/JeppeKlitgaard/DevIconsLatex
+\usepackage{devicons}
+\usepackage{adjustbox}
 
 % use a sans serif font as default
 \usepackage[sfdefault]{ClearSans}
 % \usepackage[sfdefault]{noto}
-
-% multi-language CV XeLaTeX and polyglossia (should also work with LuaLaTeX)
-% NOTE: breaks \pointskill, \membership and some spacings
-% \ifxetexorluatex
-% 	\usepackage{polyglossia}
-% 	\newfontfamily\arabicfontsf[Script=Arabic,Scale=1.5]{Amiri}
-% 	\newfontfamily\englishfontsf{Clear Sans}
-% 	\setmainfont{Amiri}
-% 	\setdefaultlanguage{arabic}
-% 	\setotherlanguage{english}
-% \fi
 
 % enable mathematical syntax for some symbols like \varnothing
 \usepackage{amssymb}
@@ -144,6 +139,10 @@
 % Macros
 \newcommand{\pdf}{\faFilePdf[regular]\xspace}
 \newcommand{\cvitemlinkpdf}[2]{\cvitemshortbigkey{#1}{\link{\urlfor{documents/#2}}{\pdf #2}}}
+
+\newcommand{\deviconlogo}[1]{\adjustbox{trim = 5pt 0 0 0}{\large{#1}}}
+\newcommand{\devicontext}[1]{\raisebox{0.2\height}{#1}}
+\newcommand{\dipointskill}[3]{\pointskill{\deviconlogo{#1}}{\devicontext{#2}}{#3}}
 
 %-------------------------------------------------------------------------------
 %                            PERSONAL INFORMATION
@@ -226,14 +225,23 @@
 %	}
 
 	\sidesection{Programming}
-		\pointskill{\faPython}{Python 3}{5}
-		\pointskill{\faLinux}{Linux}{4}
-		\pointskill{\faTerminal}{bash/zsh/fish}{4}
-		\pointskill{\faCogs}{Machine Learning}{3}
-		\pointskill{\faCuttlefish}{C/C++}{3}
+		\dipointskill{\diPythonPlain}{Python 3}{5}
+
+		\dipointskill{\diLinuxPlain}{Linux}{4}
+		\dipointskill{\diBashPlain}{bash/zsh/fish}{4}
+
+		\pointskill{\faRobot}{Machine Learning}{3}
 		\pointskill{\faDatabase}{SQL}{3}
-		\pointskill{\faHtml5}{HTML5/CSS3}{3}
-		\pointskill{\faJs}{JavaScript}{3}
+
+		\dipointskill{\diCplusplusPlain}{C++}{3}
+		\dipointskill{\diCPlain}{C}{2}
+
+		\dipointskill{\diTypescriptPlain}{TypeScript}{3}
+		\dipointskill{\diJavascriptPlain}{JavaScript}{3}
+
+		\dipointskill{\diCssPlain}{CSS3}{3}
+		\dipointskill{\diHtmlPlain}{HTML5}{3}
+
 
 	\sidesection{Technologies}
 	\begin{sidebarminipage}
@@ -353,7 +361,7 @@ I thrive in the presence of other passionate individuals.
 \begin{cvtable}[2.0]
 	\cvitem{2019 -- 2022}{BA Natural Sciences}{University of Cambridge, UK}{
 		Bachelor of Science in Physical Natural Sciences with subject choices being Physics and Mathematics.\\
-		Student Representative at Cavendish Laboratory (years 1 and 2).
+		Student Representative at Cavendish Laboratory (years 1 -- 3).
 	}
 \end{cvtable}
 

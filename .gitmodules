@@ -1,3 +1,9 @@
 [submodule "plausible"]
 	path = plausible
 	url = https://github.com/JeppeKlitgaard/hosting
+[submodule "static/profile/vendored/devicons"]
+	path = static/profile/vendored/devicons
+	url = https://github.com/devicons/devicon.git
+[submodule "vendored/DevIconsLatex"]
+	path = vendored/DevIconsLatex
+	url = git@github.com:JeppeKlitgaard/DevIconsLatex.git
