@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "🏃‍♂️ Why I Fled Mailbox.org for Protonmail"
+title: "🏃 Why I Fled Mailbox.org for Protonmail"
 subtitle: "A bumpy ride to get privacy-respecting e-mail"
 summary: ""
 
