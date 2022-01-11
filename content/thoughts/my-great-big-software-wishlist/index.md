@@ -116,6 +116,11 @@ Wishlist:
 - [X] WYSIWYG (with good MathJax support)
 - [ ] Natively customizable MathJax
 - [ ] Open source/partial open source (ideally, though as long as devs keep staying awesome, I am happy)
+- [ ] LivePreview Tables - ([issue](https://forum.obsidian.md/t/support-tables-in-live-preview-render-tables-as-per-reading-view/29100/10))
+- [ ] Better formatting toggles like ObsidianTweaks
+- [ ] Better native templating system
+  - Should be similar to [Templater](https://silentvoid13.github.io/Templater/), which is currently unmaintained.
+- [ ] Native dataviews
 
 ## ProtonCalendar
 
@@ -124,12 +129,16 @@ ProtonCalendar supports subscribing to `.ical` calendars, I don't think I'll
 be able to 😞.
 
 Wishlist:
-- [ ] Calendar subscription
+- [X] Calendar subscription (Limited to 5)
+- [ ] Increase Calendar subscription limit to 25
+- [ ] Support colored events - ([issue](https://protonmail.uservoice.com/forums/932842-proton-calendar/suggestions/42216202-ability-to-use-different-colors-for-events-in-the))
+- [ ] Implement a right-click menu
 
 ## ProtonMail
 
 Wishlist:
 - [X] Full release of ProtonMail 4.0
+- [ ] Maintain and update the UserVoice (Also applied to ProtonCalendar)
 
 ## Concepts.app
 
