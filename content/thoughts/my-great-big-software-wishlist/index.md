@@ -22,7 +22,6 @@ categories:
 
 
 # Featured image
-# Featured image
 # To use, place an image named `featured.jpg/png` in your page's folder.
 # Placement options: 1 = Full column width, 2 = Out-set, 3 = Screen-width
 # Focal point options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
@@ -178,8 +177,25 @@ Wishlist:
 - [ ] Unicode 14.0
 - [ ] Usable in modern browsers
 
+## CSS Font Module 4 Specification
+
+I passionately despise the monochrome Unicode 1.1 emojis that seem to crop up everywhere.
+[GitLab] made an excellent [blog post](https://about.gitlab.com/blog/2018/05/30/journey-in-native-unicode-emoji/)
+about their struggles with it,
+yet somehow in 2022 a good solution has yet to be specified and implemented.
+
+There is a very promising property, `font-variation-emoji`, that is part of the
+CSS Font Module 4 Specification draft, but even though the [solution was proposed in
+2017](https://github.com/w3c/csswg-drafts/issues/352), it still has not made its way
+into browsers. Argh!
+
+Wishlist:
+- [ ] Finalisation of CSS Font Module 4 Specification -([issue](https://www.w3.org/TR/css-fonts-4/))
+- [ ] Implementation of CSS Font Module 4 Specification in major browsers
+
 [Hugo]: https://gohugo.io/
 [Cryptomator]: https://cryptomator.org/
 [MountainDuck]: https://mountainduck.io/
 [espanso]: https://espanso.org/
 [OpenMoji]: https://openmoji.org/
+[GitLab]: https://about.gitlab.com/
