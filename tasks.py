@@ -6,4 +6,4 @@ def list_(c):
 
 @task
 def new(c, name):
-    c.run(f"hugo new thoughts/{name}")
+    c.run(f"hugo new 'thoughts/{name}'")
