@@ -221,8 +221,8 @@ of typing ergonomics.
   - Not just "Colemak vanilla", also Colemak-CAW (Colemak wide mod DH) and Colemak DH.
 - [ ] A proper keyboard layout editor and manager
 - [ ] Fix keyboard layout switcher
-  - [ ] Remove 'parasitic' keyboard layouts
-  - [ ] Allow user to specify __exactly__ the layouts to put in the switcher. Don't guesstimate based on languages of people nearby, region, languages, et cetera!
+  - Remove 'parasitic' keyboard layouts
+  - Allow user to specify __exactly__ the layouts to put in the switcher. Don't guesstimate based on languages of people nearby, region, languages, et cetera!
 - [ ] Stop pushing Edge - you made a Chromium browser, we get it!
 
 ![Year of the Linux Desktop](./linux_meme.jpg)
