@@ -202,6 +202,31 @@ Wishlist:
 - [ ] Finalisation of CSS Font Module 4 Specification -([issue](https://www.w3.org/TR/css-fonts-4/))
 - [ ] Implementation of CSS Font Module 4 Specification in major browsers
 
+## Windows
+
+I am sure you'll be familiar with *love-hate* relationships – my relationship with
+Microsoft's Windows OS is somewhat like that, except love is perhaps better expressed as
+skeptical agreement. It is very much a working relationship, but not much more than that.
+
+While we all patiently wait for the famed Year of the Linux Desktop,
+I figure it might be best to add a few Windows items to my wishlist in the meantime.
+
+Windows keyboard support is absolutely horrific and custom layouts require using
+an ancient piece of broken-on-arrival software called MSKLC (MicroSoft Keyboard Layout Creator).
+Additionally Windows has yet to adopt the fairly popular Colemak keyboard layout along
+with it's variants. Somehow it's commitment to user accessibility does not extend into the realm
+of typing ergonomics.
+
+- [ ] Colemak keyboard layouts in Windows
+  - Not just "Colemak vanilla", also Colemak-CAW (Colemak wide mod DH) and Colemak DH.
+- [ ] A proper keyboard layout editor and manager
+- [ ] Fix keyboard layout switcher
+  - [ ] Remove 'parasitic' keyboard layouts
+  - [ ] Allow user to specify __exactly__ the layouts to put in the switcher. Don't guesstimate based on languages of people nearby, region, languages, et cetera!
+- [ ] Stop pushing Edge - you made a Chromium browser, we get it!
+
+![Year of the Linux Desktop](./linux_meme.jpg)
+
 [Hugo]: https://gohugo.io/
 [Cryptomator]: https://cryptomator.org/
 [MountainDuck]: https://mountainduck.io/
