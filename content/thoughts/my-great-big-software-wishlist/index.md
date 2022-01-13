@@ -202,6 +202,17 @@ Wishlist:
 - [ ] Finalisation of CSS Font Module 4 Specification -([issue](https://www.w3.org/TR/css-fonts-4/))
 - [ ] Implementation of CSS Font Module 4 Specification in major browsers
 
+## Lulu split columnar keyboard
+
+I recently took a plunge into the literature surrounding custom and exotic keyboards,
+and now I desperately want to get my hands on a [Lulu](https://boardsource.xyz/projects/60de24d6847112054777bbdd)
+split columnar keyboard and begin practicing the `Colemak DH` keyboard layout.
+
+Ideally I wouldn't mind spinning up my own custom keyboard hardware at some point, 
+but that won't be in the near future.
+
+- [ ] Another Group-Buy round of the Lulu
+- [ ] Lulu available as a regular, stocked product
 ## Windows
 
 I am sure you'll be familiar with *love-hate* relationships – my relationship with
