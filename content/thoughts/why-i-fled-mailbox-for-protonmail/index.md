@@ -11,17 +11,17 @@ date: 2021-06-06T18:36:33+01:00
 lastmod: 2021-06-06T18:36:33+01:00
 
 tags:
-- e-mail
-- protonmail
-- mailfence
+- E-mail
+- ProtonMail
+- Mailfence
 - mailbox.org
-- encryption
-- productivity
+- Encryption
+- Productivity
+- Review
 
 categories:
 - Technology
 - Privacy
-- Review
 
 
 # Featured image
