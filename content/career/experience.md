@@ -31,8 +31,15 @@ experience:
     date_start: '2021-06-01'
     date_end: '2021-09-01'
     description: |
-      __Upcoming summer internship focused on physics discovery using
-      experimental mechanical setups and machine-learning.__
+      __10-week summer internship at University of Cambridge.__
+      
+      Work focused on development of a physical and simulated cartpole experiment by the name of <a href="https://jeppeklitgaard.github.io/CartER/" target="_blank">CartER</a>.
+
+      `CartER` enables reproducable investigation of model-free and model-based reinforcement learning
+      algorithms using a standardised interface that integrates with the
+      <a href="https://stable-baselines3.readthedocs.io/en/master/" target="_blank">`stable-baselines3`</a> project.
+
+      Primarily `PPO` and `A2C` were investigated using long-running physical experiments.
 
       Supervisors:
 
