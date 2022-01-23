@@ -41,7 +41,7 @@ services:
             - web
 
         volumes:
-            - ./var:/srv/var
+            - remark42_data:/srv/var
 
 
     remark42_overide:
@@ -59,7 +59,7 @@ services:
             - "8082:80"
 
         volumes:
-            - ./comments_override:/comments_override
+            - ./remark42/comments_override:/comments_override
 
         labels:
             - 'traefik.enable=true'
@@ -71,6 +71,8 @@ services:
         networks:
             - web
 
+volumes:
+    remark42_data:
 networks:
     web:
         external: true
