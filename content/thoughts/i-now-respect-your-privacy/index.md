@@ -62,6 +62,21 @@ Honourable mentions go to [Matomo] and [Shynet], but I ended up settling on [Pla
 
 Anyway, I just wanted to let you know that your privacy is (now) safe with me!
 
+## Update: I now use Umami!
+
+Perhaps somewhat ironically considering the paragraph praising the light-weight nature
+of [Plausible] above, I had to switch to [Umami], which I actually like even more!
+
+Unfortunately [Plausible] is not terribly light-weight behind the scenes and the `Clickhouse`
+database it uses for session storage is _extremely_ resource hungry and would
+quickly eat away at the 20 GB of storage I have on my cheap 3€/mo VPS.
+
+[Umami] is also features a much simpler Docker setup, requiring only two containers (node server and database)
+compared to the 4 needed by [Plausible] (server, database, session database, mail server).
+
+In summary: Use [Umami] if your use-case is similar to mine and you don't expect
+crazy visitor numbers. If you're going for larger scale, [Plausible] might be a better
+choice.
 
 [Matomo]: https://matomo.org/
 [Shynet]: https://github.com/milesmcc/shynet
@@ -69,3 +84,4 @@ Anyway, I just wanted to let you know that your privacy is (now) safe with me!
 [Remark42]: https://remark42.com/
 [Disqus]: https://disqus.com/
 [Google Analytics]: https://marketingplatform.google.com/about/analytics/
+[Umami]: https://umami.is/
