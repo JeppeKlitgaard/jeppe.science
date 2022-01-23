@@ -3,4 +3,4 @@ set -x
 
 echo "Downing jeppe.science docker containers..."
 
-docker-compose -f docker-compose.yml -f remark42/docker-compose.yml -f plausible/docker-compose.yml down
+docker-compose -f docker-compose.yml -f remark42/docker-compose.yml -f umami/docker-compose.yml down

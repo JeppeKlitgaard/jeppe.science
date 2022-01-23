@@ -3,4 +3,4 @@ set -x
 
 echo "Upping jeppe.science docker containers..."
 
-docker-compose -f docker-compose.yml -f remark42/docker-compose.yml -f plausible/docker-compose.yml up -d
+docker-compose -f docker-compose.yml -f remark42/docker-compose.yml -f umami/docker-compose.yml up -d
