@@ -3,7 +3,7 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.91.2"
+  HUGO_VERSION = "0.99.1"
   HUGO_ENABLEGITINFO = "true"
 #  GIT_LFS_ENABLED = "true"
 #! NOTE GIT_LFS_ENABLED MUST BE SET ON THE UI.

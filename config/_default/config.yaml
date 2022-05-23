@@ -4,8 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: 'Jeppe Klitgaard'
-baseurl: 'https://jeppe.science/'
-copyright: ''
+baseURL: 'https://jeppe.science/'
 
 ############################
 ## LANGUAGE
@@ -47,10 +46,10 @@ outputs:
   section: [HTML, RSS]
 
 markup:
+  _merge: deep
   defaultMarkdownHandler: goldmark
   goldmark:
     renderer:
-      unsafe: true
       hardWraps: false
       xhtml: false
     parser:
@@ -65,8 +64,6 @@ markup:
       table: true
       taskList: true
       typographer: true
-  highlight:
-    codeFences: false
   tableOfContents:
     startLevel: 2
     endLevel: 5
@@ -75,12 +72,15 @@ imaging:
   resampleFilter: lanczos
   quality: 75
   anchor: smart
+
 timeout: 600000
+
 taxonomies:
   tag: tags
   category: categories
   publication_type: publication_types
   author: authors
+
 related:
   threshold: 80
   includeNewer: true
@@ -92,7 +92,19 @@ related:
       weight: 70
 
 security:
+  _merge: deep
+    # Allow frame for embedding speaker notes in slides
+  allow_frame: true
   funcs:
     getenv:
       - ^HUGO_
       - WC_POST_CSS
+
+sitemap:
+  _merge: deep
+
+# Make thoughts a post type
+cascade:
+  - _target:
+      path: /thoughts/**
+    type: post

@@ -4,19 +4,26 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Appearance
-
-theme: minimal
-day_night: true
-font: ''
-font_size: L
+appearance:
+  theme_day: minimal
+  theme_night: minimal
+  font: minimal
+  font_size: L
 
 # SEO
-
-site_type: Person
-local_business_type: ''
-org_name: ''
-description: ''
-twitter: ''
+marketing:
+  seo:
+    site_type: Person
+    local_business_type: ""
+    org_name: ""
+    description: "Jeppe Klitgaard's personal site."
+    twitter: ""
+  analytics:
+    google_analytics: ""
+    baidu_tongji: ""
+  verification:
+    google: ""
+    baidu: ""
 
 # Contact (edit or remove options as required)
 
@@ -56,40 +63,82 @@ email: hi@jeppe.science
 #     link: 'https://discourse.gohugo.io'
 
 # Site header
+header:
+  navbar:
+    enable: true
+    align: l
+    show_logo: true
+    show_language: false
+    show_day_night: true
+    show_search: true
+    highlight_active_link: true
 
-main_menu:
-  enable: true
-  align: l
-  show_logo: true
-  show_language: false
-  show_day_night: true
-  show_search: true
-  highlight_active_link: true
+# Site footer
+footer:
+  copyright:
+    notice: >-
+      © {year} Jeppe Klitgaard.<br>
+      Except as otherwise noted, this work is licensed under {license}, and code
+      samples are licensed under the [MIT License](https://opensource.org/licenses/MIT).
+    license:
+      enable: true
+      allow_derivatives: true
+      share_alike: false
+      allow_commercial: true
 
 # Localization
-
-date_format: 'Jan 2, 2006'
-time_format: '3:04 PM'
-address_format: en-gb
+locale:
+  date_format: "Jan 2, 2006"
+  time_format: "3:04 PM"
+  address_format: en-gb
 
 # Site features
+features:
+  syntax_highlighter:
+    enable: true
+    extra_languages:
+      - rust
+      - python
+      - bash
+      - cpp
+      - latex
+  math:
+    enable: true
+  privacy_pack:
+    enable: false
+  repository:
+    url: "https://github.com/JeppeKlitgaard/jeppe.science"
+    content_dir: content
+    branch: master
+  avatar:
+    gravatar: false
+    shape: circle
+  comment:
+    provider: ""
+    disqus:
+      shortname: ""
+      show_count: true
+    commento:
+      url: ""
+  search:
+    provider: wowchemy
+    algolia:
+      app_id: ""
+      api_key: ""
+      index_name: ""
+      show_logo: false
+  map:
+    provider: ""
 
-highlight: true
-highlight_languages:
-  - python
-  - bash
-  - cpp
-math: true
-diagram: true
-privacy_pack: false
-edit_page:
-  repo_url: ''
-  content_dir: ''
-  repo_branch: main
-  editable:
-    page: false
-    post: false
-    book: false
+# Extensions
+
+extensions:
+  cms:
+    branch: main
+    local_backend: false
+  academicons:
+    enable: true
+
 show_related:
   book: true
   page: false
@@ -101,65 +150,12 @@ reading_time: true
 section_pager: false
 docs_section_pager: true
 sharing: true
-copyright_license:
-  enable: true
-  allow_derivatives: true
-  share_alike: false
-  allow_commercial: true
-  notice: >-
-    Except as otherwise noted, this work is licensed under {license}, and code
-    samples are licensed under the [MIT License](https://opensource.org/licenses/MIT).
 abstract_length: 135
 plugins_js: []
-avatar:
-  gravatar: false
-  shape: circle
-publications:
-  date_format: January 2006
-  citation_style: apa
-projects:
-  post_view: 2
-  publication_view: 2
-  talk_view: 2
-breadcrumb:
-  page_types:
-    book: true
+
+# TODO
 comments:
-  provider: 'remark42'
-  commentable:
-    thoughts: true
-    book: false
-    project: false
-    publication: false
-    event: false
-  disqus:
-    shortname: ''
-    show_count: true
-  commento:
-    url: ''
+  provider: "remark42"
   remark42:
-    url: 'http://localhost:8081'
-    site: 'JeppeScience'
-search:
-  provider: wowchemy
-  algolia:
-    app_id: ''
-    api_key: ''
-    index_name: ''
-    show_logo: false
-map:
-  provider: ''
-  api_key: ''
-  zoom: 15
-marketing:
-  google_analytics: ''
-  google_tag_manager: ''
-  google_site_verification: ''
-  baidu_site_verification: ''
-  baidu_tongji: ''
-cms:
-  branch: master
-  local_backend: true
-icon:
-  pack:
-    ai: true
+    url: "http://localhost:8081"
+    site: "JeppeScience"
