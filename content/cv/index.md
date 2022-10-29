@@ -8,4 +8,4 @@ If you're still stuck in the Stone Ages browser-wise, you can download it instea
 
 ---
 
-{{< pdf url="/profile/cv.pdf" >}}
+{{< pdf url="https://github.com/JeppeKlitgaard/CV/releases/latest/download/cv.pdf" >}}
