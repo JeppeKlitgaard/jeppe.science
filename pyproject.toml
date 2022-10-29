@@ -18,6 +18,7 @@ mypy = "^0.982"
 
 [tool.poe.tasks]
 serve = {cmd = "hugo server --disableFastRender", help = "Run Hugo server"}
+build = {cmd = "hugo --gc", help = "Run Hugo server"}
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
