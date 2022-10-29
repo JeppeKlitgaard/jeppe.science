@@ -1,9 +1,6 @@
 [submodule "static/profile/vendored/devicons"]
 	path = static/profile/vendored/devicons
 	url = https://github.com/devicons/devicon.git
-[submodule "vendored/DevIconsLatex"]
-	path = vendored/DevIconsLatex
-	url = git@github.com:JeppeKlitgaard/DevIconsLatex.git
 [submodule "static/tex/TexPreambles"]
 	path = static/tex/TexPreambles
 	url = git@github.com:JeppeKlitgaard/TexPreambles.git
