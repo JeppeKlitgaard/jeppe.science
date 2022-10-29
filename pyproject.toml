@@ -18,6 +18,7 @@ mypy = "^0.982"
 
 [tool.poe.tasks]
 serve = {cmd = "hugo server --disableFastRender", help = "Run Hugo server"}
+nbconvert = {cmd = 'watchfiles --ignore-paths var "jupyter nbconvert --config config/nbconvert_config.py" ./**/*.ipynb', help = "Run nbconvert sync"}
 build = {cmd = "hugo --gc", help = "Run Hugo server"}
 up = {cmd = "./run_docker dev up", help = "Start Remark42 and Umami servers"}
 down = {cmd = "./run_docker dev down", help = "Stop Remark42 and Umami servers"}
