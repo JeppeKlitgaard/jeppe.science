@@ -3,7 +3,7 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.99.1"
+  HUGO_VERSION = "0.105.0"
   HUGO_ENABLEGITINFO = "true"
 #  GIT_LFS_ENABLED = "true"
 #! NOTE GIT_LFS_ENABLED MUST BE SET ON THE UI.
@@ -49,9 +49,8 @@
 	# Path to the sitemap URL (optional, default = /sitemap.xml)
 	sitemapPath = "/sitemap.xml"
 
-	# Enabled providers to submit sitemap to (optional, default = 'google', 'bing', 'yandex'). Possible providers are currently only 'google', 'bing', 'yandex'.
+	# Enabled providers to submit sitemap to (optional, default = 'google', 'yandex'). Possible providers are currently only 'google', 'yandex'.
 	providers = [
 		"google",
-		"bing",
 		"yandex"
 	]
