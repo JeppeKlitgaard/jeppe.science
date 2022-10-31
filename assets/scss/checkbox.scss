@@ -20,13 +20,13 @@ $checkbox_size: 1.1em;
 				appearance        : none;
 
 				filter: none;
-				width : $checkbox_size;
-				height: $checkbox_size;
+				width : $checkbox_size !important;
+				height: $checkbox_size !important;
 
 				position: relative;
 				top     : 0.2em;
 
-				padding    : 0;
+				padding    : 0 !important;
 				margin-left: -($checkbox_size + 0.8em);
 
 				border-radius: 50%;
@@ -40,7 +40,7 @@ $checkbox_size: 1.1em;
 				}
 
 				&::after {
-					content: unset;
+					content: unset !important;
 				}
 			}
 		}
