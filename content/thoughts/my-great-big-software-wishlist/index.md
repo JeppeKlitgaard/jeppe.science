@@ -8,7 +8,7 @@ summary: ""
 authors: ["jeppe"]
 
 date: 2021-06-06T14:14:18+01:00
-lastmod: 2022-01-02T00:53:27+01:00
+lastmod: 2022-10-31T11:19:56+00:00
 
 tags:
 - e-mail
@@ -70,6 +70,12 @@ Espanso v2 has been released and it is predictably amazing.
 Federico Terzi is an amazingly friendly developer and takes great care of the
 community he has built.
 
+### Update 2
+
+It seems that Espanso development has significantly slowed, which is a great shame.
+Hopefully development will pick back up again and some of the wishes listed below can
+become reality.
+
 Wishlist:
 - [X] 2.0.0 release ([issue](https://github.com/federico-terzi/espanso/issues/594))
 - [ ] More customizable packages
@@ -93,14 +99,17 @@ Wishlist:
 - [ ] More first-class MathJax support and configurability
 - [ ] Integration of most popular addons into core of Anki
 
-## MathJax 3
+## MathJax
 
-MathJax 3 development is slowly progressing - the contour integral issue, for example, is from 2013.
+MathJax development is slowly progressing - the contour integral issue, for example, is from 2013.
 I much prefer the extensibility and style to KaTeX, and it seems like release 3.2 of MathJax will
 finally get it up to par with the 2.7 release (Python deja vu...)
 
 Wishlist:
 - [X] 3.2 Release
+- [ ] 4.0 Release
+- [ ] 2.x Deprecation
+- [ ] 3.x Deprecation
 - [ ] Newline support - ([issue](https://github.com/mathjax/MathJax/issues/2312))
 - [ ] Contour integral support - ([issue](https://github.com/mathjax/MathJax/issues/566))
 - [X] Better Unicode support - ([issue](https://github.com/mathjax/MathJax/issues/2708))
@@ -117,12 +126,38 @@ Wishlist:
 - [ ] Natively customizable MathJax
 - [ ] Open source/partial open source (ideally, though as long as devs keep staying awesome, I am happy)
 - [ ] LivePreview Tables - ([issue](https://forum.obsidian.md/t/support-tables-in-live-preview-render-tables-as-per-reading-view/29100/10))
+- [ ] Rich Notion-like / Rich tables
 - [ ] Better formatting toggles like ObsidianTweaks
 - [ ] Better native templating system
-  - Should be similar to [Templater](https://silentvoid13.github.io/Templater/), which is currently unmaintained.
+  - Should be similar to [Templater](https://silentvoid13.github.io/Templater/).
 - [ ] Native dataviews
+- [ ] Metadata improvements
+- [ ] Native folder notes similar to AidenLx's plugin
+- [ ] Calendar Core Plugin similar to Liam Cain's plugin
+- [ ] Native Hot Reload support
+- [ ] Native Kanban
+- [ ] Improve native periodic notes to match functionality of Liam Cain's plugin
+- [ ] Reimplement Quick Switcher and Command Palette as a single interface like VSCode, adding relevant extra functionality
+- [ ] Native Reveal Active File
 
-## ProtonCalendar
+## Google Calendar
+
+Currently I am using Google Calendar to at least attempt at managing my life,
+not always with the greatest of success, but making the effort nonetheless.
+
+It really feels like very little development has gone into improving the UX
+of Google Calendar in the past 5 years, with new features added only very rarely.
+
+Google is famously slow at implementing features that users desperately desire,
+so I expect much of this won't be on the cards for the foreseeable future.
+
+Wishlist:
+- [ ] Dark mode — it is 2022 and there really is no excuse for this
+- [ ] Duplicate events using CTRL-C, CTRL-V
+- [ ] Prebuilt blocks that can be dragged in using a widget
+- [ ] Ability to edit basic things like title or duration in left-click modal
+
+## Proton Calendar
 
 I am really hoping to switch away from Google Calendar soon, but until
 ProtonCalendar supports subscribing to `.ical` calendars, I don't think I'll
@@ -133,11 +168,13 @@ Wishlist:
 - [ ] Increase Calendar subscription limit to 25
 - [ ] Support colored events - ([issue](https://protonmail.uservoice.com/forums/932842-proton-calendar/suggestions/42216202-ability-to-use-different-colors-for-events-in-the))
 - [ ] Implement a right-click menu
+- [ ] Ability to change title and time directly in left-click modal
 
-## ProtonMail
+## Proton Mail
 
 Wishlist:
 - [X] Full release of ProtonMail 4.0
+- [X] Full release of ProtonMail 5.0
 - [ ] Maintain and update the UserVoice (Also applied to ProtonCalendar)
 
 ## Concepts.app
@@ -158,6 +195,15 @@ Wishlist:
 
 Wishlist:
 - [ ] Native support for `.ipynb` Jupyter Notebooks ([issue](https://github.com/gohugoio/hugo/issues/6101))
+
+## Wowchemy
+Link: [Wowchemy]
+
+Wishlist:
+- [ ] Redesign using Tailwind CSS - ([issue](https://github.com/wowchemy/wowchemy-hugo-themes/issues/2792))
+- [ ] Prettier checkboxes - ([PR](https://github.com/wowchemy/wowchemy-hugo-themes/pull/2870))
+- [ ] Refactoring of colours and styling - ([issue](https://github.com/wowchemy/wowchemy-hugo-themes/issues/2871))
+- [ ] Better Jupyter Notebook support
 
 ## gWSL
 
@@ -183,7 +229,7 @@ It will likely be a while before sufficient tooling and browser support will ena
 that, unfortunately.
 
 Wishlist:
-- [ ] Unicode 14.0
+- [X] Unicode 14.0
 - [ ] Usable in modern browsers
 
 ## CSS Font Module 4 Specification
@@ -194,25 +240,26 @@ about their struggles with it,
 yet somehow in 2022 a good solution has yet to be specified and implemented.
 
 There is a very promising property, `font-variation-emoji`, that is part of the
-CSS Font Module 4 Specification draft, but even though the [solution was proposed in
-2017](https://github.com/w3c/csswg-drafts/issues/352), it still has not made its way
+CSS Font Module 4 Specification draft, but even though the
+[solution was proposed in 2017](https://github.com/w3c/csswg-drafts/issues/352), it still has not made its way
 into browsers. Argh!
 
 Wishlist:
-- [ ] Finalisation of CSS Font Module 4 Specification -([issue](https://www.w3.org/TR/css-fonts-4/))
+- [ ] Finalisation of CSS Font Module 4 Specification - ([issue](https://www.w3.org/TR/css-fonts-4/))
 - [ ] Implementation of CSS Font Module 4 Specification in major browsers
 
-## Lulu split columnar keyboard
+## Aysu Split Keyboard
 
 I recently took a plunge into the literature surrounding custom and exotic keyboards,
-and now I desperately want to get my hands on a [Lulu](https://boardsource.xyz/projects/60de24d6847112054777bbdd)
-split columnar keyboard and begin practicing the `Colemak DH` keyboard layout.
+and now I desperately want to get my hands on an Aysu keyboard from SplitKB
+and begin practicing the `Colemak DH` keyboard layout.
 
 Ideally I wouldn't mind spinning up my own custom keyboard hardware at some point, 
 but that won't be in the near future.
 
-- [ ] Another Group-Buy round of the Lulu
-- [ ] Lulu available as a regular, stocked product
+Wishlist:
+- [ ] Aysu released
+
 ## Windows
 
 I am sure you'll be familiar with *love-hate* relationships – my relationship with
@@ -228,6 +275,7 @@ Additionally Windows has yet to adopt the fairly popular Colemak keyboard layout
 with it's variants. Somehow it's commitment to user accessibility does not extend into the realm
 of typing ergonomics.
 
+Wishlist:
 - [ ] Colemak keyboard layouts in Windows
   - Not just "Colemak vanilla", also Colemak-CAW (Colemak wide mod DH) and Colemak DH.
 - [ ] A proper keyboard layout editor and manager
@@ -239,6 +287,7 @@ of typing ergonomics.
 ![Year of the Linux Desktop](./linux_meme.jpg)
 
 [Hugo]: https://gohugo.io/
+[Wowchemy]: https://wowchemy.com/
 [Cryptomator]: https://cryptomator.org/
 [MountainDuck]: https://mountainduck.io/
 [espanso]: https://espanso.org/
