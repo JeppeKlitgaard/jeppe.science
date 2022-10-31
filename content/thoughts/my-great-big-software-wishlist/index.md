@@ -98,6 +98,7 @@ Wishlist:
 - [ ] Markdown cards
 - [ ] More first-class MathJax support and configurability
 - [ ] Integration of most popular addons into core of Anki
+- [ ] Native REST API
 
 ## MathJax
 
