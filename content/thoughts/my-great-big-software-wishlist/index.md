@@ -113,6 +113,10 @@ Wishlist:
 - [ ] Newline support - ([issue](https://github.com/mathjax/MathJax/issues/2312))
 - [ ] Contour integral support - ([issue](https://github.com/mathjax/MathJax/issues/566))
 - [X] Better Unicode support - ([issue](https://github.com/mathjax/MathJax/issues/2708))
+- [ ] Support for the `siunitx` package ([issue](https://github.com/mathjax/MathJax/issues/447))
+- [ ] Support for the `xparse` package ([issue](https://github.com/mathjax/MathJax/issues/2684))
+- [ ] Support for the `xypic` package ([external](https://github.com/sonoisa/XyJax-v3))
+- [ ] Support for the `img` package ([external](https://github.com/pkra/mathjax-img))
 
 ## Obsidian
 
