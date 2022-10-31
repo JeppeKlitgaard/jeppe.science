@@ -1,10 +1,12 @@
 @import 'colors';
 @import 'utils';
 
-$checkbox_size: 1.3em;
+$checkbox_size: 1.1em;
 
 @mixin checkbox($color, $background_color) {
 	$bg_col: str-replace("#{$background_color}", '#', '');
+	$checkmark_color: str-replace("#{$color}", "#", "");
+	$svg_checked_box: '<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path style="fill:%23#{$checkmark_color};fill-rule:evenodd;stroke-width:1.80314;image-rendering:auto" d="M8 0a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8Zm4.245 4.046a.5.5 0 0 1 .349.138l.698.678a.465.465 0 0 1 0 .674l-6.425 6.28a.51.51 0 0 1-.7 0l-3.46-3.38a.467.467 0 0 1 0-.676l.7-.676a.507.507 0 0 1 .698 0L6.518 9.45l5.377-5.266a.5.5 0 0 1 .35-.138z"/></svg>';
 
 	ul.task-list {
 		padding-inline-start: ($checkbox_size + 1.0em);
@@ -22,9 +24,7 @@ $checkbox_size: 1.3em;
 				height: $checkbox_size;
 
 				position: relative;
-				top     : 0.25em;
-
-				line-height: 0;
+				top     : 0.2em;
 
 				padding    : 0;
 				margin-left: -($checkbox_size + 0.8em);
@@ -33,14 +33,15 @@ $checkbox_size: 1.3em;
 				border       : 2px solid $color;
 
 				&:checked {
-					background-color   : $color !important;
-					border             : 1px solid $color;
 					background-position: center;
-					background-size    : 70%;
+					background-size: $checkbox_size;
 					background-repeat  : no-repeat;
-					background-image   : url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23#{$bg_col}"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+					background-image   : url('data:image/svg+xml;utf8,#{$svg_checked_box}');
 				}
 
+				&::after {
+					content: unset;
+				}
 			}
 		}
 	}
