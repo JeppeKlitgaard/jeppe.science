@@ -144,6 +144,7 @@ Wishlist:
 - [ ] Improve native periodic notes to match functionality of Liam Cain's plugin
 - [ ] Reimplement Quick Switcher and Command Palette as a single interface like VSCode, adding relevant extra functionality
 - [ ] Native Reveal Active File
+- [ ] `SCSS` support in snippets (and themes?)
 
 ## Google Calendar
 
