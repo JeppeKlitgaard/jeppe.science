@@ -145,6 +145,8 @@ Wishlist:
 - [ ] Reimplement Quick Switcher and Command Palette as a single interface like VSCode, adding relevant extra functionality
 - [ ] Native Reveal Active File
 - [ ] `SCSS` support in snippets (and themes?)
+- [ ] Nicer live-preview of callouts with actual live rendering and drop-down for callout types
+- [ ] Reopen last closed tab(s) (default keybinding: `CTRL`+`SHIFT`+`T`)
 
 ## Google Calendar
 
