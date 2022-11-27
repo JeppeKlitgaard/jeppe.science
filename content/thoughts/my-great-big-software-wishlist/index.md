@@ -147,6 +147,8 @@ Wishlist:
 - [ ] `SCSS` support in snippets (and themes?)
 - [ ] Nicer live-preview of callouts with actual live rendering and drop-down for callout types
 - [ ] Reopen last closed tab(s) (default keybinding: `CTRL`+`SHIFT`+`T`)
+- [ ] Native plugin and theme pre-release system
+  - Should be similar to [Obsidian43-BRAT](https://github.com/TfTHacker/obsidian42-brat)
 
 ## Google Calendar
 
@@ -266,6 +268,7 @@ Ideally I wouldn't mind spinning up my own custom keyboard hardware at some poin
 but that won't be in the near future.
 
 Wishlist:
+- [ ] Elora released
 - [ ] Aysu released
 
 ## Windows
