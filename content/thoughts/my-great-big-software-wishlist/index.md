@@ -240,6 +240,7 @@ that, unfortunately.
 
 Wishlist:
 - [X] Unicode 14.0
+- [ ] Unicode 15.0 - ([issue](https://github.com/hfg-gmuend/openmoji/issues/410))
 - [ ] Usable in modern browsers
 
 ## CSS Font Module 4 Specification
