@@ -1,0 +1,31 @@
+#!/bin/bash
+set -x
+
+echo "Upping jeppe.science docker containers..."
+
+case $1 in
+    dev|prod)
+        ;;
+    *)
+        echo "Not a valid target"
+        exit 1
+        ;;
+esac
+
+case $2 in
+    up)
+        args="up -d"
+        ;;
+    down)
+        args="down"
+        ;;
+    *)
+        echo "Not a valid operation"
+        exit 1
+        ;;
+esac
+
+docker-compose -f docker-compose.yml \
+    -f remark42/docker-compose.yml -f remark42/docker-compose.$1.yml \
+    -f umami/docker-compose.yml -f umami/docker-compose.$1.yml \
+    $args

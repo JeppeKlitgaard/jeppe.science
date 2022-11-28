@@ -1,0 +1,6 @@
+---
+version: '3.8'
+services:
+  umami:
+    env_file:
+      - ./remark42/remark42.dev.env

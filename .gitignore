@@ -21,6 +21,8 @@ go.sum
 *fls
 *out
 
+# Production environment variables
+*.prod.env
+
 # Remark42
-envs/remark42_overrides.env
 var/

@@ -1,78 +1,75 @@
 version: "3.8"
 
-
 services:
-    remark42:
-        image: umputun/remark42:latest
-        container_name: remark42
-        hostname: remark42
-        restart: always
+  remark42:
+    image: umputun/remark42:latest
+    container_name: remark42
+    hostname: remark42
+    restart: always
 
-        logging:
-            driver: json-file
-            options:
-                max-size: "10m"
-                max-file: "5"
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"
 
-        # uncomment to expose directly (no proxy)
-        ports:
-         - "8081:8080"
+    # uncomment to expose directly (no proxy)
+    ports:
+      - "8081:8080"
 
-        env_file:
-            - ./remark42/remark42.env
-            - ./remark42/remark42_overrides.env
+    env_file:
+      - ./remark42/remark42.env
 
-        labels:
-            traefik.enable: "true"
+    labels:
+      traefik.enable: "true"
 
-            traefik.http.routers.comments.rule: "Host(`comments.jeppe.science`)"
-            traefik.http.routers.comments.entrypoints: "websecure"
-            traefik.http.routers.comments.tls.certresolver: "letsencrypt"
+      traefik.http.routers.comments.rule: "Host(`comments.jeppe.science`)"
+      traefik.http.routers.comments.entrypoints: "websecure"
+      traefik.http.routers.comments.tls.certresolver: "letsencrypt"
 
-            traefik.http.middlewares.replace-comment-path.replacepathregex.regex: "^/web-orig/(.*)"
-            traefik.http.middlewares.replace-comment-path.replacepathregex.replacement: "/web/$$1"
-            traefik.http.routers.comments-original.rule: "Host(`comments.jeppe.science`) && PathPrefix(`/web-orig/`)"
-            traefik.http.routers.comments-original.priority: "40"
-            traefik.http.routers.comments-original.middlewares: "replace-comment-path"
-            traefik.http.routers.comments-original.entrypoints: "websecure"
-            traefik.http.routers.comments-original.tls.certresolver: "letsencrypt"
+      traefik.http.middlewares.replace-comment-path.replacepathregex.regex: "^/web-orig/(.*)"
+      traefik.http.middlewares.replace-comment-path.replacepathregex.replacement: "/web/$$1"
+      traefik.http.routers.comments-original.rule: "Host(`comments.jeppe.science`) && PathPrefix(`/web-orig/`)"
+      traefik.http.routers.comments-original.priority: "40"
+      traefik.http.routers.comments-original.middlewares: "replace-comment-path"
+      traefik.http.routers.comments-original.entrypoints: "websecure"
+      traefik.http.routers.comments-original.tls.certresolver: "letsencrypt"
 
-        networks:
-            - web
+    networks:
+      - web
 
-        volumes:
-            - remark42_data:/srv/var
+    volumes:
+      - remark42_data:/srv/var
 
+  remark42_override:
+    image: halverneus/static-file-server:latest
+    container_name: remark42_override
+    hostname: remark42_override
+    restart: always
 
-    remark42_overide:
-        image: halverneus/static-file-server:latest
-        container_name: remark42_override
-        hostname: remark42_override
-        restart: always
+    environment:
+      - PORT=80
+      - FOLDER=/comments_override
+      - DEBUG=true
 
-        environment:
-            - PORT=80
-            - FOLDER=/comments_override
-            - DEBUG=true
+    ports:
+      - "8082:80"
 
-        ports:
-            - "8082:80"
+    volumes:
+      - ./remark42/comments_override:/comments_override
 
-        volumes:
-            - ./remark42/comments_override:/comments_override
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.comments_override.rule=Host(`comments.jeppe.science`) && Path(`/web/remark.css`)'
+      - 'traefik.http.routers.comments_override.entrypoints=websecure'
+      - 'traefik.http.routers.comments_override.tls.certresolver=letsencrypt'
+      - 'traefik.http.routers.comments_override.priority=50'
 
-        labels:
-            - 'traefik.enable=true'
-            - 'traefik.http.routers.comments_override.rule=Host(`comments.jeppe.science`) && Path(`/web/remark.css`)'
-            - 'traefik.http.routers.comments_override.entrypoints=websecure'
-            - 'traefik.http.routers.comments_override.tls.certresolver=letsencrypt'
-            - 'traefik.http.routers.comments_override.priority=50'
-
-        networks:
-            - web
+    networks:
+      - web
 
 volumes:
-    remark42_data:
+  remark42_data:
 networks:
-    web:
-        external: true
+  web:
+    external: true

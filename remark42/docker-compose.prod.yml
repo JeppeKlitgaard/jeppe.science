@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  remark42:
+    env_file:
+      - ./remark42/remark42.prod.env

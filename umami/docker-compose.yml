@@ -1,5 +1,5 @@
 ---
-version: '3'
+version: '3.8'
 services:
   umami:
     image: ghcr.io/mikecao/umami:postgresql-latest
@@ -7,10 +7,11 @@ services:
     hostname: umami
     ports:
       - "3001:3000"
+    env_file:
+        - ./umami/umami.env
     environment:
       DATABASE_URL: postgresql://umami:umami@db:5432/umami
       DATABASE_TYPE: postgresql
-      HASH_SALT: 6TVgv9meZrFkbUfLpztxqSCocnPy64sG
     depends_on:
       - db
     restart: always
