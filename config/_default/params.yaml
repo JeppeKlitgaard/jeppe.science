@@ -109,7 +109,10 @@ features:
     gravatar: false
     shape: circle
   comment:
-    provider: ""
+    provider: "remark42"
+    remark42:
+      url: "http://localhost:8081"
+      site: "JeppeScience"
     disqus:
       shortname: ""
       show_count: true
@@ -147,10 +150,3 @@ docs_section_pager: true
 sharing: true
 abstract_length: 135
 plugins_js: []
-
-# TODO
-comments:
-  provider: "remark42"
-  remark42:
-    url: "http://localhost:8081"
-    site: "JeppeScience"

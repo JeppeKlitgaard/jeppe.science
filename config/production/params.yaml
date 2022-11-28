@@ -1,3 +1,4 @@
-comments:
-  remark42:
-    url: 'https://comments.jeppe.science'
+features:
+  comment:
+    remark42:
+      url: 'https://comments.jeppe.science'
