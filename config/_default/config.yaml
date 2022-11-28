@@ -110,3 +110,5 @@ cascade:
   - _target:
       path: /thoughts/**
     type: post
+    commentable: true
+
