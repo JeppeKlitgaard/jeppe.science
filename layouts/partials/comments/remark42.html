@@ -5,6 +5,7 @@
       components: ['embed'],
       max_shown_comments: 15,
       show_email_subscription: false,
+      no_footer: true, // No footer does not seem to work
     };
 </script>
 
@@ -13,76 +14,21 @@
 
 <script>
     // Sync Remark42 theme to current page theme
+    document.addEventListener('wcThemeChange', (e) => {
+        const isDark = e.detail.isDarkTheme()
+        const theme = isDark ? "dark" : "light"
 
-    // https://stackoverflow.com/questions/10612024/event-trigger-on-a-class-change/53914092
-    class ClassWatcher {
+        const isRemarkLoaded = window.REMARK42 !== undefined
 
-        constructor(targetNode, classToWatch, classAddedCallback, classRemovedCallback) {
-            this.targetNode = targetNode
-            this.classToWatch = classToWatch
-            this.classAddedCallback = classAddedCallback
-            this.classRemovedCallback = classRemovedCallback
-            this.observer = null
-            this.lastClassState = targetNode.classList.contains(this.classToWatch)
-
-            this.init()
+        if (isRemarkLoaded) {
+            window.REMARK42.changeTheme(theme)
+        } else {
+            window.remark_config.theme = theme
+            window.addEventListener('REMARK42::ready', (e) => {
+                window.REMARK42.changeTheme(theme)
+            })
         }
-
-        init() {
-            this.observer = new MutationObserver(this.mutationCallback)
-            this.observe()
-        }
-
-        observe() {
-            this.observer.observe(this.targetNode, { attributes: true })
-        }
-
-        disconnect() {
-            this.observer.disconnect()
-        }
-
-        mutationCallback = mutationsList => {
-            for(let mutation of mutationsList) {
-                if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-                    let currentClassState = mutation.target.classList.contains(this.classToWatch)
-                    if(this.lastClassState !== currentClassState) {
-                        this.lastClassState = currentClassState
-                        if(currentClassState) {
-                            this.classAddedCallback()
-                        }
-                        else {
-                            this.classRemovedCallback()
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    function updateRemarkTheme() {
-        let isDark = document.body.classList.contains("dark");
-        let theme = isDark ? "dark" : "light";
-
-        window.REMARK42.changeTheme(theme);
-    }
-
-    let bodyNode = document.body
-    let classWatcher = new ClassWatcher(bodyNode, "dark", updateRemarkTheme, updateRemarkTheme);
-
-    let divNode = document.querySelector("div#remark42");
-    let iframeWatcher = new MutationObserver((records) => {updateRemarkTheme();});
-    iframeWatcher.observe(divNode, {childList: true});
-
-    window.addEventListener("REMARK42::ready", (event) => {updateRemarkTheme();});
-
-    // In case we have class set at beginning
-    window.addEventListener('load', (event) => {
-            updateRemarkTheme();
-
-            // Fix: sometimes we seem to miss this anyway...
-            setTimeout(() => {updateRemarkTheme();}, 500); // ms
-            setTimeout(() => {updateRemarkTheme();}, 3000); // ms
-        });
+    })
 
 </script>
 
