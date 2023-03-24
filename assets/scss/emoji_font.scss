@@ -3,7 +3,7 @@ $emoji_font: "OpenMojiColor";
 @font-face {
     font-family: $emoji_font;
     src:
-        local($emoji_font),
+        // local($emoji_font),  // Does not work currently
         url("/fonts/OpenMojiColor/OpenMoji-color-glyf_colr_1.woff2") format("woff2"),
         url("/fonts/OpenMojiColor/OpenMoji-color-glyf_colr_0.woff2") format("woff2"),
         url("/fonts/OpenMojiColor/OpenMoji-color-picosvgz.woff2") format("woff2"),
