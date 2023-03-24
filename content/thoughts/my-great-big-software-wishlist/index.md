@@ -8,7 +8,7 @@ summary: ""
 authors: ["jeppe"]
 
 date: 2021-06-06T14:14:18+01:00
-lastmod: 2022-10-31T11:19:56+00:00
+lastmod: 2023-03-24T17:16:53+00:00
 
 tags:
 - e-mail
@@ -132,23 +132,27 @@ Wishlist:
 - [ ] Open source/partial open source (ideally, though as long as devs keep staying awesome, I am happy)
 - [ ] LivePreview Tables - ([issue](https://forum.obsidian.md/t/support-tables-in-live-preview-render-tables-as-per-reading-view/29100/10))
 - [ ] Rich Notion-like / Rich tables
-- [ ] Better formatting toggles like ObsidianTweaks
+  - [ ] Native sortable tables like the [Sortable plugin](https://github.com/alexandru-dinu/obsidian-sortable)
+- [ ] Better formatting toggles like [ObsidianTweaks](https://github.com/JeppeKlitgaard/ObsidianTweaks)
 - [ ] Better native templating system
   - Should be similar to [Templater](https://silentvoid13.github.io/Templater/).
-- [ ] Native dataviews
+- [ ] Native dataviews like the [Dataview plugin](https://github.com/blacksmithgu/obsidian-dataview)
 - [ ] Metadata improvements
-- [ ] Native folder notes similar to AidenLx's plugin
-- [ ] Calendar Core Plugin similar to Liam Cain's plugin
-- [ ] Native Hot Reload support
+- [ ] Native folder notes similar to [AidenLx's plugin](https://github.com/aidenlx/alx-folder-note)
+- [ ] Calendar Core Plugin similar to [Liam Cain's plugin](https://github.com/liamcain/obsidian-calendar-plugin)
+- [ ] Native Hot Reload support like the [Hot Reload plugin](https://github.com/pjeby/hot-reload)
 - [ ] Native Kanban
-- [ ] Improve native periodic notes to match functionality of Liam Cain's plugin
-- [ ] Reimplement Quick Switcher and Command Palette as a single interface like VSCode, adding relevant extra functionality
-- [ ] Native Reveal Active File
+- [ ] Improve native periodic notes to match functionality of [Liam Cain's plugin](https://github.com/liamcain/obsidian-periodic-notes)
+- [ ] Reimplement Quick Switcher and Command Palette as a single interface like VSCode, adding relevant extra functionality. Similar to [QuickSwitcher++](https://github.com/darlal/obsidian-switcher-plus)
+- [ ] Native functionality mimicking the [Reveal Active File plugin](https://github.com/claremacrae/reveal-active-file-button-plugin)
+- [ ] Better word count like the [Better Word Count plugin](https://github.com/lukeleppan/better-word-count)
 - [ ] `SCSS` support in snippets (and themes?)
 - [ ] Nicer live-preview of callouts with actual live rendering and drop-down for callout types
 - [ ] Reopen last closed tab(s) (default keybinding: `CTRL`+`SHIFT`+`T`)
 - [ ] Native plugin and theme pre-release system
   - Should be similar to [Obsidian43-BRAT](https://github.com/TfTHacker/obsidian42-brat)
+  - Implement named transclusion blocks – ([issue](https://forum.obsidian.md/t/rename-name-or-hide-transclusion-block-titles/48753))
+
 
 ## Google Calendar
 
@@ -241,7 +245,7 @@ that, unfortunately.
 Wishlist:
 - [X] Unicode 14.0
 - [ ] Unicode 15.0 - ([issue](https://github.com/hfg-gmuend/openmoji/issues/410))
-- [ ] Usable in modern browsers
+- [X] Usable in modern browsers - ([PR](https://github.com/hfg-gmuend/openmoji/pull/422))
 
 ## CSS Font Module 4 Specification
 
