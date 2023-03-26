@@ -1,5 +1,5 @@
 ---
-title: 📖 Book Reviews
+title: 📖 Book Notes
 subtitle: |
   _Books are a uniquely portable magic_
   — Stephen King
@@ -17,7 +17,7 @@ Below is an index of my thoughts on some of the books I have read, which I
 try to collect entirely for my own benefit and amusement while they're still
 lucid.
 
-Reviews still to be written:
+Notes still to be written:
 - The Long Dark Tea-Time of the Soul
 - The Salmon of Doubt
 - Slaughterhouse-Five
