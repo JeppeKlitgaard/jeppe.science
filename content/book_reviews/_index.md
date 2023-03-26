@@ -9,4 +9,5 @@ cascade:
 
   image:
     focal_point: Smart
+    placement: 4
 ---
