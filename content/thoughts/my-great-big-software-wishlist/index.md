@@ -5,8 +5,6 @@ title: "🎁 My Great Big Software Wishlist"
 subtitle: ""
 summary: ""
 
-authors: ["jeppe"]
-
 date: 2021-06-06T14:14:18+01:00
 lastmod: 2023-03-24T17:16:53+00:00
 
@@ -32,19 +30,6 @@ image:
   focal_point: "Center"
   placement: 1
   preview_only: false
-
-  
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
-
-toc: true
-featured: false
-draft: false
 ---
 
 Having recently switched over a fair portion of my tech setup to more ethical

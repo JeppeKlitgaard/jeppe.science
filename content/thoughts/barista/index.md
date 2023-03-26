@@ -5,8 +5,6 @@ title: "☕ Barista: An Espanso build tool for Unicode connoisseurs"
 subtitle: "No coffee beans were harmed in the development of this tool."
 summary: ""
 
-authors: ["jeppe"]
-
 date: 2022-01-21T23:43:39+00:00
 lastmod: 2022-01-21T23:43:43+00:00
 
@@ -32,10 +30,6 @@ image:
   focal_point: "Center"
   placement: 1
   preview_only: false
-
-toc: true
-featured: false
-draft: false
 ---
 
 Gone are the days _(at least almost)_ when we lived under the tyranny of the feared

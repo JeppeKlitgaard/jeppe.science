@@ -4,9 +4,6 @@
 title: "🔏 Privacy for Non-Fanatics"
 subtitle: "Striking a balance between convenience, cost, and confidentiality"
 summary: ""
-authors: ["jeppe"]
-
-toc: true
 
 tags:
 - Privacy
@@ -22,8 +19,6 @@ categories:
 
 date: 2021-05-04T17:33:53+01:00
 lastmod: 2021-05-04T17:33:53+01:00
-featured: false
-draft: false
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -32,13 +27,6 @@ image:
   caption: ""
   focal_point: ""
   preview_only: false
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
 ---
 
 If you're anything like me, you been meaning to up your privacy-game as some sort of futile

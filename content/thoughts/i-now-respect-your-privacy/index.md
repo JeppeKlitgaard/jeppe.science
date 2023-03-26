@@ -5,8 +5,6 @@ title: "😬 I Now Respect Your Privacy"
 subtitle: "As I always should have!"
 summary: ""
 
-authors: ["jeppe"]
-
 date: 2021-07-24T17:46:11+01:00
 lastmod: 2021-07-24T17:46:11+01:00
 
@@ -31,17 +29,6 @@ image:
   caption: ""
   focal_point: ""
   preview_only: false
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
-
-toc: true
-featured: false
-draft: false
 ---
 
 When I first set this up, I wanted to have an idea of whether anyone was actually tuning in (spoiler alert: most people aren't), so I set up Google Analytics on my site. It was easy, free, and the de facto choice for most blogs. My software package even had support for it out of the box.

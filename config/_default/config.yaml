@@ -104,11 +104,3 @@ security:
 
 sitemap:
   _merge: deep
-
-# Make thoughts a post type
-cascade:
-  - _target:
-      path: /thoughts/**
-    type: post
-    commentable: true
-

@@ -4,7 +4,6 @@
 title: "📈 Quantifying 'The Curve'"
 subtitle: "A naive attempt at COVID curve fitting"
 summary: ""
-authors: ["jeppe"]
 
 tags:
 - COVID-19
@@ -19,8 +18,6 @@ toc: true
 
 date: 2020-04-11T10:53:30+01:00
 lastmod: 2021-05-05T10:53:30+01:00
-featured: false
-draft: false
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -29,13 +26,6 @@ image:
   caption: ""
   focal_point: ""
   preview_only: false
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
 ---
 
 With COVID-19 being at the top of everyone’s mind, I decided to poke around with
