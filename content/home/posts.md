@@ -13,12 +13,12 @@ title: 💭 Recent Thoughts
 subtitle: _Get them while they're_ 🔥
 
 content:
-  # Page type to display. E.g. post, talk, publication...
-  page_type: thoughts
   # Choose how many pages you would like to display (0 = all pages)
-  count: 5
+  count: 4
   # Filter on criteria
   filters:
+    folders:
+      - thoughts
     author: ""
     category: ""
     tag: ""
@@ -30,12 +30,14 @@ content:
   offset: 0
   # Page order: descending (desc) or ascending (asc) date.
   order: desc
+  
 
 design:
+  view: compact
   # Choose a view for the listings:
   #   1 = List
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view: 2
+  # columns: '1'
 ---
