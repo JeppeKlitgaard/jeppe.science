@@ -14,7 +14,9 @@ organizations:
   url: https://www.cam.ac.uk/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Just another enthustiastic _polymoron_ thinking out loud.
+bio: |
+  Just another enthustiastic _polymoron_ thinking out loud.
+  Aspiring goodish person.
 
 # Interests to show in About widget
 interests:
@@ -27,6 +29,7 @@ interests:
 - 📏 Engineering
 - 🔨 DIY
 - 🤓 Outreach
+- 🧗 Climbing
 
 # Education to show in About widget
 education:
