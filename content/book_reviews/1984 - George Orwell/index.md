@@ -12,6 +12,8 @@ tags:
 - Classic
 - ⭐⭐⭐⭐⭐
 
+stars: 5
+
 links:
 - icon: amazon
   icon_pack: fab
