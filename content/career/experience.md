@@ -22,6 +22,29 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: R&D Engineering
+    company: Nanonord A/S
+    company_url: 'http://nanonord.dk/'
+    company_logo: nanonord
+    location: Aalborg, Denmark
+    date_start: '2022-06-01'
+    # date_end: '2022-11-01'
+    description: |
+      Research and Development role in Nuclear Magnetic Resonance (NMR) sensor company
+      combining mechanical engineering, physics, and software engineering skills.
+
+      Majority of work focused on development of a testing and shimming platform for a
+      $≈ 1T$ permanent magnet Halbach cylinder using high-precision Hall Effect sensors and
+      NMR frequency data in order to improve passive shimming outcomes and improve the internal
+      magnetic field homogeneity.
+
+      The primary product, the Tveskaeg system, uses NMR relaxometry methods to determine isotope
+      content and derived quantities on liquid phase samples.
+      Use-cases include salt content determination in food industries,
+      boron concentration determination in water desalination plants,
+      and many other industrial cases.
+
+      _Currently on leave to finish academic studies._
 
   - title: Summer Research Internship
     company: Cavendish Laboratory, University of Cambridge
