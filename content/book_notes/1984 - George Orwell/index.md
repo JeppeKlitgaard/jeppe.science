@@ -3,7 +3,7 @@ title: 1984 — George Orwell
 summary: |
   A dystopian classic for a reason.
 
-date: 2023-03-26
+date: 2015-03-26
 
 tags:
 - Fiction
