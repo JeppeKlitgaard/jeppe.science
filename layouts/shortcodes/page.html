@@ -1,0 +1,9 @@
+{{ $page_ref := (relURL (.Get 0)) }}
+{{ $page_ref_str := printf "%s" $page_ref }}
+{{ $page := .Site.GetPage $page_ref_str }}
+
+{{ with $page }}
+    <a href="{{.Permalink}}">
+        {{ .Title | markdownify }}
+    </a>
+{{- end -}}

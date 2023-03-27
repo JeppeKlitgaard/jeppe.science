@@ -18,7 +18,6 @@ try to collect entirely for my own benefit and amusement while they're still
 lucid.
 
 Notes still to be written:
-- The Long Dark Tea-Time of the Soul
 - The Salmon of Doubt
 - Slaughterhouse-Five
 - Norwegian Wood
