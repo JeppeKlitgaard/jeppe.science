@@ -54,7 +54,7 @@ markup:
     renderer:
       hardWraps: false
       xhtml: false
-      unsafe: false
+      unsafe: true
     parser:
       attribute:
         block: true
