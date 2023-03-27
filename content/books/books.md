@@ -37,6 +37,12 @@ content:
   filter_button:
     - name: All
       tag: '*'
+    - name: Non-Fiction
+      tag: Non-Fiction
+    - name: Essay
+      tag: Essay
+    - name: Literary Criticism
+      tag: Literary Criticism
     - name: Fiction
       tag: Fiction
     - name: Science Fiction
