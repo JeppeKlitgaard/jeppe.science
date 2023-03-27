@@ -1,0 +1,28 @@
+---
+date: {{ .Date }}
+title: Book Title — Author
+summary: |
+  ...
+
+tags:
+- Fiction
+- Science Fiction
+- Surreal
+- Humour
+- ⭐⭐⭐⭐⭐
+
+stars: 5
+
+links:
+- icon: amazon
+  icon_pack: fab
+  name: Buy on Amazon
+  url: '...'
+- icon: goodreads
+  icon_pack: fab
+  name: See on GoodReads
+  url: '...'
+---
+
+## Introduction
+...
