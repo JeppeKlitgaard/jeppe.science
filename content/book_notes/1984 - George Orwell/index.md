@@ -1,5 +1,7 @@
 ---
 title: 1984 — George Orwell
+book_author: George Orwell
+book_title: '1984'
 summary: |
   A dystopian classic for a reason.
 

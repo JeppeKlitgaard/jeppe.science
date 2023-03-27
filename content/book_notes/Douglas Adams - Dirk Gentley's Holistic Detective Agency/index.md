@@ -1,5 +1,7 @@
 ---
 title: Dirk Gentley's Holistic Detective Agency — Douglas Adams
+book_author: Douglas Adams
+book_title: Dirk Gentley's Holistic Detective Agency
 summary: |
   Hilariously well-written sci-fi that blatantly disregards the laws of physics,
   and reaffirms the geocentric world-view by placing Cambridge, UK at the

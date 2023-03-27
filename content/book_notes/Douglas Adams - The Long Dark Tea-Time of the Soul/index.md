@@ -28,7 +28,7 @@ links:
 ---
 
 ## Introduction
-Having consumed the first book in the series, {{< page "Douglas Adams - Dirk Gentley's Holistic Detective Agency" >}}, with some enthusiasm, I threw myself at the second
+Having consumed the first book in the series, {{< book_note "Douglas Adams - Dirk Gentley's Holistic Detective Agency" >}}, with some enthusiasm, I threw myself at the second
 book.
 One of the charms to me of the the inaugural book of the series was the many
 witty references to Cambridge culture, which aren't present this time around
