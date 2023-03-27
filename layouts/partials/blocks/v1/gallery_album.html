@@ -1,0 +1,89 @@
+
+{{/* Wowchemy Blocks: Portfolio */}}
+{{/* Documentation: https://wowchemy.com/blocks/ */}}
+{{/* License: https://github.com/wowchemy/wowchemy-hugo-themes/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $columns := $block.Params.design.columns | default "2" }}
+
+{{ $sortOrder := "asc" }}
+{{ $photos_folder := index $block.Params.content "folder" | default $page.File.Path }}
+{{ $photos_page := site.GetPage $photos_folder }}
+{{ $photos := sort ($photos_page.Resources.ByType "image") (index .Params "sort_by" | default "Name") $sortOrder }}
+{{ $thumbnailResizeOptions := "900x600" }}
+{{ $imageResizeOptions := "1600x1600" }}
+{{ $galleryId := (printf "gallery-%v" $page.File.UniqueID)}}
+
+{{/*  Include gallery JS only once  */}}
+{{ if eq ($page.Scratch.Get "gallery_js_included") nil }}
+    {{ $gallery_js := resources.Get "js/gallery.js" | js.Build (dict "minify" false) | resources.Fingerprint -}}
+    <script defer src="{{ $gallery_js.RelPermalink }}"></script>
+    {{ $page.Scratch.Set "gallery_js_included" true }}
+{{ end }}
+
+<div class="col-12 {{if eq $columns "2"}}col-lg-8{{end}}">
+  {{ with $block.Content }}{{ . }}{{ end }}
+  <div id="{{ $galleryId }}" class="fj-gallery">
+    {{ range $index, $original := $photos }}
+    {{ if eq $original.ResourceType "image" }}
+  {{ $metadata := dict }}
+  {{ with $original.Exif }}
+  {{ $metadata = merge .Tags $metadata }}
+        {{ end }}
+      {{ $rotation := "" }}
+      {{ with $metadata.Orientation }}
+      {{ if or (eq . 8) (eq . 7) }}
+      {{ $rotation = " r90" }}
+      {{ else if or (eq . 3) (eq . 4) }}
+      {{ $rotation = " r180" }}
+      {{ else if or (eq . 6) (eq . 5) }}
+          {{ $rotation = " r270" }}
+          {{ end }}
+          {{ end }}
+          {{ $thumbnail := ($original.Fit (printf "%s %s" $thumbnailResizeOptions $rotation)) }}
+          {{ $full := ($original.Fit (printf "%s %s" $imageResizeOptions $rotation)) }}
+          {{ $color := index $thumbnail.Colors 0 | default "transparent" }}
+          <a href="{{ $original.RelPermalink }}"
+          class="fj-gallery-item"
+          data-src="{{ $original.RelPermalink }}"
+          data-pswp-src="{{ $full.RelPermalink }}"
+          data-pswp-width="{{ $full.Width }}"
+          data-pswp-height="{{ $full.Height }}"
+          {{ with $metadata }}
+          {{ if .Title }}
+            title="{{ .Title }}"
+          {{ else if .ImageDescription }}
+          title="{{ .ImageDescription }}"
+          {{ end }}
+          {{ end }}
+          itemscope
+          itemtype="https://schema.org/ImageObject"
+          >
+          <img
+          width="{{ $thumbnail.Width }}" height="{{ $thumbnail.Height }}"
+          {{ if gt $index 10 }}loading="lazy"{{ end }}
+          src="{{ $thumbnail.RelPermalink }}"
+          style="background-color: {{ $color }};"
+          {{ with $metadata }}
+          {{ if .ImageDescription }}
+          alt="{{ .ImageDescription }}"
+            {{ else }}
+            {{ if .Title}}
+                alt="{{ .Title }}"
+              {{ end }}
+              {{ end }}
+            {{ end }}
+            >
+        <meta itemprop="contentUrl" content="{{ $original.RelPermalink }}">
+        {{ with $.Site.Author }}
+        <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+          <meta itemprop="name" content="{{ $.Site.Author.name }}" />
+        </span>
+        {{ end }}
+      </a>
+    {{ end }}
+    {{ end }}
+  </div>
+</div>
