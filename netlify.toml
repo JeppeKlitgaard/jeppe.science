@@ -3,6 +3,8 @@
   publish = "public"
 
 [build.environment]
+  # PYTHON_VERSION = "3.11"  # Currently only 3.8 is supported
+  PYTHON_VERSION = "3.8"
   HUGO_VERSION = "0.111.3"
   HUGO_ENABLEGITINFO = "true"
 #  GIT_LFS_ENABLED = "true"

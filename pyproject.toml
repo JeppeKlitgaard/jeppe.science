@@ -6,7 +6,7 @@ authors = ["Jeppe Klitgaard <hi@jeppe.science>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.8"
 ipykernel = "^6.22.0"
 poethepoet = "^0.13.1"
 watchfiles = "^0.18.0"
