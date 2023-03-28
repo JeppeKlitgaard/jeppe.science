@@ -3,8 +3,8 @@ widget: gallery_album
 weight: 20
 
 title: Gallery
-description: Interrailing trip. Ljubljana, Slovenia
-date: 2019-01-01
+description: Photos from my parent's home in Denmark
+date: 2020-01-01
 
 design:
   columns: '1'
