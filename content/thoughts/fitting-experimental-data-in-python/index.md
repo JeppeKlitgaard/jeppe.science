@@ -5,36 +5,28 @@ title: "Fitting Experimental Data in Python"
 subtitle: ""
 summary: ""
 
-authors: ["jeppe"]
-
-date: 2022-05-23T16:18:58+01:00
-lastmod: 2022-05-23T16:18:58+01:00
+date: 2020-04-11
+lastmod: 2023-03-28T22:20:41+01:00
 
 tags:
-- Tag
+- Jupyter
+- Cambridge
+- Rant
 
 categories:
-- Category
+- Science
+- Data Science
+- Physics
 
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: ""
+  caption: "Fitted data from mechanical resonance experiment"
   focal_point: ""
   preview_only: false
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
-
-toc: true
-featured: false
-draft: false
+  filename: content.generated/content.generated_8_0.png
 ---
 
 {{< notebook content >}}
