@@ -37,4 +37,4 @@ featured: false
 draft: false
 ---
 
-{{< include contents.md >}}
+{{< notebook content >}}

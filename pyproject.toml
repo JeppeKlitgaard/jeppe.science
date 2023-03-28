@@ -7,21 +7,39 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-ipykernel = "^6.13.0"
+ipykernel = "^6.22.0"
 poethepoet = "^0.13.1"
 watchfiles = "^0.18.0"
-nbconvert = "^7.2.3"
+nbconvert = {git = "https://github.com/JeppeKlitgaard/nbconvert/", branch = "implement-output-base-pattern"}
 matplotlib = "^3.6.1"
+nbformat = "^5.8.0"
+lmfit = "^1.1.0"
+sympy = "^1.11.1"
+uncertainties = "^3.1.7"
+pandas = "^1.5.3"
+numpy = "^1.24.2"
+openpyxl = "^3.1.2"
+numdifftools = "^0.9.41"
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.982"
 
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+
 [tool.poe.tasks]
+# Dev tasks
 serve = {cmd = "hugo server --disableFastRender", help = "Run Hugo server"}
-nbconvert = {cmd = 'watchfiles --ignore-paths var "jupyter nbconvert --config config/nbconvert_config.py" ./**/*.ipynb', help = "Run nbconvert sync"}
-build = {cmd = "hugo --gc", help = "Run Hugo server"}
+nbconvert_watch = {cmd = 'watchfiles --ignore-paths var "jupyter nbconvert --config config/nbconvert_config.py" ./**/*.ipynb', help = "Run nbconvert sync"}
 up = {cmd = "./run_docker dev up", help = "Start Remark42 and Umami servers"}
 down = {cmd = "./run_docker dev down", help = "Stop Remark42 and Umami servers"}
+
+# Production tasks
+build = {cmd = "hugo --gc", help = "Run Hugo server"}
+nbconvert_build = {cmd = 'jupyter nbconvert --config config/nbconvert_config.py ./**/*.ipynb', help = "Run nbconvert sync"}
+prepare = [
+    "nbconvert_build"
+]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
