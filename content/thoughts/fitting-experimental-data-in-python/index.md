@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Fitting Experimental Data in Python"
+title: "📈 Fitting Experimental Data in Python"
 subtitle: ""
 summary: ""
 
@@ -29,4 +29,4 @@ image:
   filename: content.generated/content.generated_8_0.png
 ---
 
-{{< notebook content >}}
+{{% notebook content %}}
