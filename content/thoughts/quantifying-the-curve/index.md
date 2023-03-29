@@ -109,7 +109,10 @@ Here is the graph for all countries — it is a bit busy.
 
 {{< figure src="graph3.png" >}}
 
-*It should be noted that the tool also does *`cases`* and *`recoveries`*, but
+*It should be noted that the tool also does
+*`cases`*
+and
+*`recoveries`*, but
 deaths was chosen as this is probably the most reliable number across the
 different countries.*
 
