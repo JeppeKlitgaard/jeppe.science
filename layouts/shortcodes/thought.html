@@ -1,5 +1,9 @@
-{{ $page := .Site.GetPage (printf "/thoughts/%s" (.Get 0)) }}
+{{ $thought := printf "/thoughts/%s" (.Get 0) }}
+{{ $page := .Site.GetPage $thought }}
 
-{{ with $page }}{{ $urlStr := (printf "[%s](%s)" .Title .Permalink) }}
+{{ with $page }}
+    {{ $urlStr := (printf "[%s](%s)" .Title .Permalink) }}
     {{ print $urlStr | markdownify }}
+{{ else }}
+    {{ errorf "Could not include page that does not exist: %s" $thought }}
 {{- end -}}

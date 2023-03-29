@@ -10,4 +10,6 @@
             {{ errorf "book_title not set on %q" .}}
         {{- end -}}
     </a>
+{{ else }}
+    {{ errorf "Could not include page that does not exist: %s" $page_ref }}
 {{- end -}}
