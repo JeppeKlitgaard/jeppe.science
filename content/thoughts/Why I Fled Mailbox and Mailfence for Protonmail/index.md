@@ -33,7 +33,7 @@ image:
 
 ## The Goal
 
-As I described in the post {{<thought privacy-for-non-fanatics>}},
+As I described in the post {{< thought "Privacy for Non-Fanatics" >}},
 I have recently been on a budget-friendly quest to claw back at least some of my privacy from the ever-expanding silicon giants.
 
 Something that bothered me in particular was e-mail, through which a surprising amount of sensitive information is being

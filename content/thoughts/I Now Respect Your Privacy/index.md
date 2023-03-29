@@ -35,7 +35,7 @@ When I first set this up, I wanted to have an idea of whether anyone was actuall
 
 I should add that this was also before I had my recent adventure into trying to claw back a bit more privacy, so at the time I felt fine about using Google Analytics.
 
-Truthfully, writing {{< thought "privacy-for-non-fanatics" >}} made me realise that using Google Analytics on my site was a tad hypocritical for my liking and I wanted to move away from it at my first opportunity - which was now!
+Truthfully, writing {{< thought "Privacy for Non-Fanatics" >}} made me realise that using Google Analytics on my site was a tad hypocritical for my liking and I wanted to move away from it at my first opportunity - which was now!
 
 ## Choice of software
 
