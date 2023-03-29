@@ -1,2 +1,2 @@
 {{- $filename := printf "%s.generated.md" (.Get 0) -}}
-{{- (.Page.Resources.GetMatch $filename).Content | safeHTML -}}
+{{- (.Page.Resources.GetMatch $filename).RawContent | safeHTML -}}
