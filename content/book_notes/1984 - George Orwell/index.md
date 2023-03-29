@@ -41,7 +41,7 @@ far back in time at this stage.
 
 Items of particular intertextual value include:
 
-- The glass paperweight, 
+- The glass paperweight,
     which may be understood to symbolise a time prior to dystopian rule and the fragility of democracy
 - Big Brother
 

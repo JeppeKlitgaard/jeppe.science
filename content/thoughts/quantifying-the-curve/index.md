@@ -75,7 +75,6 @@ nice graphs with standard errors like the one below. Feel free to download the
 git repository and have a play with the data in the `COVID_data.ipynb` Jupyter
 notebook yourself.
 
-
 {{< figure src="graph1.png" caption="Johns Hopkins University COVID-19 data" >}}
 
 In the legend we also find the 3 parameters from our logistic fit, where the `c`

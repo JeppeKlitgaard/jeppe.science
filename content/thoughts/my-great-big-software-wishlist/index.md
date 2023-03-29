@@ -62,6 +62,7 @@ Hopefully development will pick back up again and some of the wishes listed belo
 become reality.
 
 Wishlist:
+
 - [X] 2.0.0 release ([issue](https://github.com/federico-terzi/espanso/issues/594))
 - [ ] More customizable packages
 - [ ] Native `jsonnet` support? ([issue](https://github.com/federico-terzi/espanso/issues/679))
@@ -80,6 +81,7 @@ of the HTML formatting of the cards, which will sometimes include hidden tags
 that break MathJax.
 
 Wishlist:
+
 - [ ] Markdown cards
 - [ ] More first-class MathJax support and configurability
 - [ ] Integration of most popular addons into core of Anki
@@ -92,6 +94,7 @@ I much prefer the extensibility and style to KaTeX, and it seems like release 3.
 finally get it up to par with the 2.7 release (Python deja vu...)
 
 Wishlist:
+
 - [X] 3.2 Release
 - [ ] 4.0 Release
 - [ ] 2.x Deprecation
@@ -110,6 +113,7 @@ Obsidian is great for writing notes and is super customizable.
 It is still early days for Obsidian, which hasn't yet reached version 1.0.0.
 
 Wishlist:
+
 - [ ] Documented API
 - [ ] Improvements to Graph View
 - [X] WYSIWYG (with good MathJax support)
@@ -138,7 +142,6 @@ Wishlist:
   - Should be similar to [Obsidian43-BRAT](https://github.com/TfTHacker/obsidian42-brat)
   - Implement named transclusion blocks – ([issue](https://forum.obsidian.md/t/rename-name-or-hide-transclusion-block-titles/48753))
 
-
 ## Google Calendar
 
 Currently I am using Google Calendar to at least attempt at managing my life,
@@ -151,6 +154,7 @@ Google is famously slow at implementing features that users desperately desire,
 so I expect much of this won't be on the cards for the foreseeable future.
 
 Wishlist:
+
 - [ ] Dark mode — it is 2022 and there really is no excuse for this
 - [ ] Duplicate events using CTRL-C, CTRL-V
 - [ ] Prebuilt blocks that can be dragged in using a widget
@@ -163,6 +167,7 @@ ProtonCalendar supports subscribing to `.ical` calendars, I don't think I'll
 be able to 😞.
 
 Wishlist:
+
 - [X] Calendar subscription (Limited to 5)
 - [ ] Increase Calendar subscription limit to 25
 - [ ] Support colored events - ([issue](https://protonmail.uservoice.com/forums/932842-proton-calendar/suggestions/42216202-ability-to-use-different-colors-for-events-in-the))
@@ -172,6 +177,7 @@ Wishlist:
 ## Proton Mail
 
 Wishlist:
+
 - [X] Full release of ProtonMail 4.0
 - [X] Full release of ProtonMail 5.0
 - [ ] Maintain and update the UserVoice (Also applied to ProtonCalendar)
@@ -179,26 +185,32 @@ Wishlist:
 ## Concepts.app
 
 Wishlist:
+
 - [ ] Full subscription sync between Windows and Android
 - [ ] Feature parity between Android, Windows, and iOS.
 - [ ] Easily copy selection to clipboard as PNG image on Android
 
 ## Cryptomator
+
 Link: [Cryptomator]
 
 Wishlist:
+
 - [ ] Document provider on Android ([issue](https://github.com/cryptomator/android/issues/35))
 - [ ] PIN protection on Android ([issue](https://github.com/cryptomator/android/issues/301))
 
 ## Hugo
 
 Wishlist:
+
 - [ ] Native support for `.ipynb` Jupyter Notebooks ([issue](https://github.com/gohugoio/hugo/issues/6101))
 
 ## Wowchemy
+
 Link: [Wowchemy]
 
 Wishlist:
+
 - [ ] Redesign using Tailwind CSS - ([issue](https://github.com/wowchemy/wowchemy-hugo-themes/issues/2792))
 - [ ] Prettier checkboxes - ([PR](https://github.com/wowchemy/wowchemy-hugo-themes/pull/2870))
 - [ ] Refactoring of colours and styling - ([issue](https://github.com/wowchemy/wowchemy-hugo-themes/issues/2871))
@@ -207,8 +219,8 @@ Wishlist:
 ## gWSL
 
 Wishlist:
-- [X] Non-insiders release of `gWSL`
 
+- [X] Non-insiders release of `gWSL`
 
 ## MountainDuck
 
@@ -217,6 +229,7 @@ on Google Drive, but I find that it isn't super stable.
 This is a bit frustrating, as the software is not free.
 
 Wishlist:
+
 - [ ] Fix of memory leaks
 - [ ] More stable user experience
 - [ ] Faster syncs
@@ -228,6 +241,7 @@ It will likely be a while before sufficient tooling and browser support will ena
 that, unfortunately.
 
 Wishlist:
+
 - [X] Unicode 14.0
 - [ ] Unicode 15.0 - ([issue](https://github.com/hfg-gmuend/openmoji/issues/410))
 - [X] Usable in modern browsers - ([PR](https://github.com/hfg-gmuend/openmoji/pull/422))
@@ -245,6 +259,7 @@ CSS Font Module 4 Specification draft, but even though the
 into browsers. Argh!
 
 Wishlist:
+
 - [ ] Finalisation of CSS Font Module 4 Specification - ([issue](https://www.w3.org/TR/css-fonts-4/))
 - [ ] Implementation of CSS Font Module 4 Specification in major browsers
 
@@ -254,10 +269,11 @@ I recently took a plunge into the literature surrounding custom and exotic keybo
 and now I desperately want to get my hands on an Aysu keyboard from SplitKB
 and begin practicing the `Colemak DH` keyboard layout.
 
-Ideally I wouldn't mind spinning up my own custom keyboard hardware at some point, 
+Ideally I wouldn't mind spinning up my own custom keyboard hardware at some point,
 but that won't be in the near future.
 
 Wishlist:
+
 - [ ] Elora released
 - [ ] Aysu released
 
@@ -277,6 +293,7 @@ with it's variants. Somehow it's commitment to user accessibility does not exten
 of typing ergonomics.
 
 Wishlist:
+
 - [ ] Colemak keyboard layouts in Windows
   - Not just "Colemak vanilla", also Colemak-CAW (Colemak wide mod DH) and Colemak DH.
 - [ ] A proper keyboard layout editor and manager
@@ -287,7 +304,6 @@ Wishlist:
 
 ![Year of the Linux Desktop](./linux_meme.jpg)
 
-[Hugo]: https://gohugo.io/
 [Wowchemy]: https://wowchemy.com/
 [Cryptomator]: https://cryptomator.org/
 [MountainDuck]: https://mountainduck.io/

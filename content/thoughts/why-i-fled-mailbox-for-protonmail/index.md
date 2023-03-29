@@ -32,6 +32,7 @@ image:
 ---
 
 ## The Goal
+
 As I described in the post {{<thought privacy-for-non-fanatics>}},
 I have recently been on a budget-friendly quest to claw back at least some of my privacy from the ever-expanding silicon giants.
 
@@ -39,6 +40,7 @@ Something that bothered me in particular was e-mail, through which a surprising 
 sent in the UK - this would be considered highly inappropriate – if not outright illegal – in Denmark. 🤔
 
 ## The Journey
+
 In the end, after being disappointed with the initial look and feel of [MailFence], I went for the Germany-based Mailbox.org.
 These are both options that are highly praised in online reviews, but given my experience with [Mailbox.org] I find it hard to believe that
 even the more reputable tech sites did a thorough test of the service.
@@ -50,6 +52,7 @@ This is important to me, as I currently use 5 e-mail accounts due to different o
 and this would be entirely unmanageable if I were to use individual inboxes on webservices.
 
 ### The Problem(s)
+
 As I was setting up SPF and DKIM on Mailbox.org, I had some problems due to an error in their "knowledge database", which suggests
 using an SPF-type entry to set up SPF. While this might have made sense at the time of writing that entry (presumable refering to [RFC4408]), this document was made obsolete in 2014 with the introduction of [RFC7208]. [RFC4408] was only ever experimental, and in the [RFC7208] specification SPF-type RR's are no longer valid and should be changed to TXT.
 
@@ -85,7 +88,7 @@ It appears that the case has been closed after no less than 29 days.
 Here is the kicker: The knowledge database still reflects a blatantly disallowed configuration that leads
 to failed SPF checks — Despite my helpful reminder 🤦‍♂️. Come on...
 
-#### Steer clear of Mailbox.org!
+#### Steer clear of Mailbox.org
 
 __I really hope people steer clear of [Mailbox.org] in the future.
 While their heart might be in the right place, they seem very far from a reliable provider,
@@ -97,6 +100,7 @@ It appears I am not alone in my experience: [Other frustrated customer](https://
 Oh, and the guide still has not been fixed! 🤦‍♂️
 
 ## The Solution
+
 [ProtonMail]'s paid offering is slightly less featureful than a comparable plan
 with [Mailbox.org], but in return you get a solution that works much better and
 is far easier to use. Encryption is also enabled out of the box.

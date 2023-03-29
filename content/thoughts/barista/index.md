@@ -33,7 +33,7 @@ image:
 ---
 
 Gone are the days _(at least almost)_ when we lived under the tyranny of the feared
-American Standard Code for Information Interchange, perhaps better known by its acronym __*ASCII*__.
+American Standard Code for Information Interchange, perhaps better known by its acronym ___ASCII___.
 The world has _(again, largely)_ changed to the much revered Unicode,
 but all is not well in encoding paradise.
 
@@ -90,7 +90,7 @@ As you can imagine, managing 34015 matches is a daunting task and entirely
 inappropriate work for a human, which brings us to [Barista].
 
 While still poorly documented, [Barista] is a capable build tool for [Espanso]
-configuration files. It allows me to split my matches and replacements across 
+configuration files. It allows me to split my matches and replacements across
 85 [Jsonnet] files instead.
 
 ### 🎺 Aside: Jsonnet
@@ -133,6 +133,7 @@ With Unicode the source text looks like:
 ```
 
 Without, it looks like:
+
 ```latex
 {\nabla}^2 \vec F =
   \nabla(\nabla \cdot \vec F) -

@@ -35,7 +35,7 @@ links:
 ## Introduction
 
 This is the first book in Douglas Adam's lesser known Sci-Fi series with which it also
-shares its name. While it never reached the cult status of its sister series 
+shares its name. While it never reached the cult status of its sister series
 _A Hitchhiker's Guide to the Galaxy_, I found it to be equally as hilarious.
 
 ## Cambridge

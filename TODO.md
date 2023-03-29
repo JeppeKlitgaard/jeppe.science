@@ -1,6 +1,6 @@
 # TODO
-A list of things that I should be doing at some point.
 
+A list of things that I should be doing at some point.
 
 ## Blog posts
 

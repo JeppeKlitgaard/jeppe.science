@@ -29,6 +29,7 @@ links:
 ---
 
 ## Introduction
+
 Every now and then I fall into the trap of buying a self-help book based on
 the fancy promises on the cover, where reputable news papers and reviewers
 will utter raving praise and imply that reading the book is a truly life-changing
@@ -43,4 +44,5 @@ activities according to a particular study. I found the writing needlessly verbo
 and simultaneously lacking in academic depth.
 
 ## Recommendation
+
 Steer clear and spend your time having a restful walk instead.

@@ -21,5 +21,4 @@ weight: 60
   "Harapos Kutya" allegedly means something like: _dog bites_. (It did not)`
 >}}
 
-
 </p>
