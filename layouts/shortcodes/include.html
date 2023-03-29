@@ -3,5 +3,5 @@
 {{ with $resource }}
     {{ $resource.RawContent | safeHTML -}}
 {{ else }}
-    {{ errorf "Could not include resource that does not exist: %s" $page_path }}
+    {{ errorf "%q: Could not include page that does not exist: %q" .Page.File.Path $page_path }}
 {{- end -}}

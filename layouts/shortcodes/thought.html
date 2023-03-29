@@ -5,5 +5,5 @@
     {{ $urlStr := (printf "[%s](%s)" .Title .Permalink) }}
     {{ print $urlStr | markdownify }}
 {{ else }}
-    {{ errorf "Could not include page that does not exist: %s" $thought }}
+    {{ errorf "%q: Could not include page that does not exist: %q" .Page.File.Path $thought }}
 {{- end -}}

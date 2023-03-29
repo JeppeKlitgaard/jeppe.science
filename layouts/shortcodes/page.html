@@ -6,4 +6,7 @@
     <a href="{{.Permalink}}">
         {{ .Title | markdownify }}
     </a>
+
+{{ else }}
+    {{ errorf "%q: Could not include page that does not exist: %q" .Page.File.Path (.Get 0) }}
 {{- end -}}

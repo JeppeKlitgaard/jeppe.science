@@ -11,5 +11,5 @@
         {{- end -}}
     </a>
 {{ else }}
-    {{ errorf "Could not include page that does not exist: %s" $page_ref }}
+    {{ errorf "%q: Could not include page that does not exist: %q" .Page.File.Path $page_ref }}
 {{- end -}}
