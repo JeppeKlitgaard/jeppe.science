@@ -1,5 +1,7 @@
 ---
 date: 2022-11-21
+lastmod: 2023-03-29
+
 title: Some Thoughts on the Common Toad — George Orwell
 book_author: George Orwell
 book_title: Some Thoughts on the Common Toad

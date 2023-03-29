@@ -1,5 +1,7 @@
 ---
 date: {{ .Date }}
+lastmod: {{ .Date }}
+
 title: Book Title — Author
 book_author: Author
 book_title: Book Title

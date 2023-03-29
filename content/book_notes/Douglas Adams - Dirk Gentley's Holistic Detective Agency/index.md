@@ -1,4 +1,7 @@
 ---
+date: 2022-10-21
+lastmod: 2023-03-29
+
 title: Dirk Gentley's Holistic Detective Agency — Douglas Adams
 book_author: Douglas Adams
 book_title: Dirk Gentley's Holistic Detective Agency
@@ -17,7 +20,6 @@ tags:
 
 stars: 5
 
-date: 2022-10-21
 links:
 - icon: amazon
   icon_pack: fab

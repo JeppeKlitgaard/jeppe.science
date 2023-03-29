@@ -1,5 +1,7 @@
 ---
 date: 2022-11-05
+lastmod: 2023-03-29
+
 title: The Salmon of Doubt — Douglas Adams
 book_author: Douglas Adams
 book_title: The Salmon of Doubt

@@ -1,11 +1,13 @@
 ---
+date: 2015-03-26
+lastmod: 2023-03-29
+
 title: 1984 — George Orwell
 book_author: George Orwell
 book_title: '1984'
 summary: |
   A dystopian classic for a reason.
 
-date: 2015-03-26
 
 tags:
 - Fiction
