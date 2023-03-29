@@ -49,13 +49,17 @@ abandoned Dropbox account, my photos, and my e-mail communication.
 
 While it was easy to forget and hardly kept me up at night, the thought of storing
 all my files unencrypted with a third-party using a free account _should_ be enough to
-terrify anyone. I was storing medical details, tax documents, payslips, and all sorts of documents
-that were really meant for my 👀 only.
+terrify anyone. I was storing medical details, tax documents, payslips,
+and all sorts of documents that were really meant for my 👀 only.
 
 Similarly the thought of Google oogling my photos was a bit disconcerting, innocent though they are.
 
 Lastly, since moving to the UK where you can expect to communicate with your doctor,
-employer and the Government over e-mail (which is [a horrible and completely inappropriate way to handle private data](https://security.stackexchange.com/questions/30087/good-simple-list-of-reasons-that-email-is-inherently-insecure)),
+employer and the Government over e-mail
+(which is
+[a horrible and completely inappropriate way to handle private data](
+  <https://security.stackexchange.com/questions/30087/good-simple-list-of-reasons-that-email-is-inherently-insecure>
+)),
 I thought I needed to get away from GMail.
 In Denmark, any sensitive communication can and should be done via [E-Boks](https://www.e-boks.com/danmark/en/) and [NemID](https://en.wikipedia.org/wiki/NemID),
 but sadly there doesn't seem to be a UK equivalent.
@@ -72,8 +76,9 @@ leaves my data unencrypted and readable by a third party.
 Fortunately, there are software solutions that are designed to solve this issue.
 A notable candidate for this is [Cryptomator](https://cryptomator.org/), which
 is open source, free, and _fairly_ mature. Effectively it works by implementing a
-filesystem that sits on top of a regular folder (called a _vault_), and encrypts/decrypts
-your data on the fly. That way, all data at rest is stored encrypted.
+filesystem that sits on top of a regular folder (called a _vault_),
+and encrypts/decrypts your data on the fly.
+That way, all data at rest is stored encrypted.
 
 By placing your vault in a folder synced by Google Drive, you get to use Google storage,
 but without having to worry about them being able to read any data stored in your vault.
@@ -122,15 +127,17 @@ It is hardly a show-stopper, UX-wise, but it is free, open-source, and OS-agnost
 
 For e-mail I eventually settled on just moving off GMail to the privacy-oriented provider [mailbox.org](https://mailbox.org/en/).
 
-__Edit: I had poor experiences with mailbox.org and their support in particular, I really wouldn't recommend using them.
-See my post about it here: [Why I Fled Mailbox and Mailfence for Protonmail]({{< relref "/thoughts/why-i-fled-mailbox-for-protonmail" >}})__
+__Edit: I had poor experiences with mailbox.org and their support in particular,
+I really wouldn't recommend using them.
+See my post about it here:
+{{< thought "Why I Fled Mailbox and Mailfence for Protonmail">}}__
 
 While security is probably better when using [ProtonMail](https://protonmail.com/) or [Tutanota](https://tutanota.com/),
 I wanted something that _simply works_ and is based on the existing, widely used standards (even if these standards are horrible and inherently insecure).
 
 With a custom domain the price ends up at 3€/mo, which is a bit higher than I was hoping for,
-but I guess I'll just forego that one coffee per month and sleep soundly knowing that Google isn't
-able to snoop through my mails.
+but I guess I'll just forego that one coffee per month and sleep soundly knowing
+that Google isn't able to snoop through my mails.
 
 It also has a bunch of other cool features:
 
@@ -139,8 +146,9 @@ It also has a bunch of other cool features:
 3. Disposable e-mails
 4. Office suite
 
-The UX is a bit old-fashioned and every now and then I'll stumble upon something in German,
-which only serves to highlight just how much my German has deteriorated since high school.
+The UX is a bit old-fashioned and every now and then I'll stumble upon
+something in German, which only serves to highlight just how much my German has
+deteriorated since high school.
 
 Germany being Germany, it doesn't have recurring credit card payments and instead
 needs you to 'top up' your credit manually 🙃.

@@ -43,7 +43,7 @@ live out the true potential of the superior encoding. To find freedom in the kin
 
 Our savior is none other than [Federico Terzi], our Holy Book nothing less than [Espanso].
 I hope to convince you that [Barista] may belong in the Gospels,
-or whatever the equivalent may be in your chosen faith, belief system or lack thereof. 
+or whatever the equivalent may be in your chosen faith, belief system or lack thereof.
 
 [Espanso] is _text expander_ that provides an escape from our ASCII nightmare and manages
 to be performant, privacy-focused, cross-platform, and entirely free and open source.
@@ -63,6 +63,7 @@ With the fair decent unique support of [MathJax].
 Below is an example of a few expansions I have set up with my Espanso configuration.
 Whenever I type the _match_, [Espanso] automagically replaces it with the replacement.
 
+<!-- markdownlint-disable no-space-in-code Spaces inside code span elements -->
 | Match    | Replacement                                                  |
 | -------- | ------------------------------------------------------------ |
 | `:isod ` | `2022-01-21` (today's date, calculated at time of expansion) |
@@ -70,6 +71,7 @@ Whenever I type the _match_, [Espanso] automagically replaces it with the replac
 | `:bbR `  | ℝ                                                            |
 | `:@ `    | hi@jeppe.science                                             |
 | `;b `    | β                                             |
+<!-- markdownlint-enable no-space-in-code Spaces inside code span elements -->
 
 In fact, my current Espanso setup contains 34015 matches that map to 1666 replacements!
 I can type pretty much any accented latinised character easily: ą, ÿ, ŧ and so on.
