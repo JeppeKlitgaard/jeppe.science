@@ -9,6 +9,7 @@ summary: |
   ...
 
 tags:
+- English/Danish
 - Fiction
 - Science Fiction
 - Surreal

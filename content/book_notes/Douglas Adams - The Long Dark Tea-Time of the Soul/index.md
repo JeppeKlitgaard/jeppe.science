@@ -10,6 +10,7 @@ summary: |
   but effective detective career.
 
 tags:
+- English
 - Fiction
 - Science Fiction
 - Surreal

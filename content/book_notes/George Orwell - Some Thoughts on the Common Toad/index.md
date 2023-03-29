@@ -9,6 +9,7 @@ summary: |
   A short collection of Orwellian essays of greatly varying interest to me.
 
 tags:
+- English
 - Non-Fiction
 - Essay
 - Literary Criticism

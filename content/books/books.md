@@ -34,6 +34,10 @@ content:
   filter_button:
     - name: All
       tag: '*'
+    - name: 🇬🇧 English
+      tag: English
+    - name: 🇩🇰 Danish
+      tag: Danish
     - name: Non-Fiction
       tag: Non-Fiction
     - name: Essay
