@@ -6,7 +6,7 @@ title: Book Title — Author
 book_author: Author
 book_title: Book Title
 summary: |
-  ...
+  …
 
 tags:
 - English/Danish
@@ -22,13 +22,13 @@ links:
 - icon: amazon
   icon_pack: fab
   name: Buy on Amazon
-  url: '...'
+  url: '…'
 - icon: goodreads
   icon_pack: fab
   name: See on GoodReads
-  url: '...'
+  url: '…'
 ---
 
 ## Introduction
 
-...
+…

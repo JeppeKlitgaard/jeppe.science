@@ -19,7 +19,6 @@ lucid.
 
 Notes still to be written:
 
-- Slaughterhouse-Five
 - Norwegian Wood
 - The Inimitable Jeeves
 - Collected Grooks I/II
