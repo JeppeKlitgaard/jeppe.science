@@ -6,7 +6,7 @@ subtitle: ""
 summary: ""
 
 date: 2021-06-06T14:14:18+01:00
-lastmod: 2023-03-24T17:16:53+00:00
+lastmod: 2023-03-30T10:00:01+01:00
 
 tags:
 - e-mail
@@ -174,6 +174,24 @@ Wishlist:
 - [ ] Implement a right-click menu
 - [ ] Ability to change title and time directly in left-click modal
 
+## Cron Calendar
+
+Some of my complaints about [Google Calendar] have been fixed by the _Cron Calendar_ software, but this comes with its own trade-offs.
+
+Wishlist:
+
+- [ ] More colours! 7 simply is not enough, especially not compared to the 11 of [Google Calendar]
+  - Ideally these would be customizable and namable
+- [ ] Custom themes
+  - I don't particularly like the default dark mode theme and their choice of fonts. It would be really cool to be able to apply different themes to the Calendar, ideally customizable ones
+- [ ] Undo
+  - It is just completely weird and unintuitive to use an application that does not support the ubituitous <kbd>CTRL+z</kbd> undo shortcut
+- [ ] Participants without e-mails
+  - I would like to add participants to the participant box without notifying them. Allow arbitrary strings to be put in this field.
+- [ ] Markdown descriptions
+  - The description field should support Markdown formats (including math?)
+- [ ] Prebuilt blocks that can be dragged in using a widget
+
 ## Proton Mail
 
 Wishlist:
@@ -279,7 +297,7 @@ Wishlist:
 
 ## Windows
 
-I am sure you'll be familiar with *love-hate* relationships – my relationship with
+I am sure you'll be familiar with _love-hate_ relationships – my relationship with
 Microsoft's Windows OS is somewhat like that, except love is perhaps better expressed as
 skeptical agreement. It is very much a working relationship, but not much more than that.
 
@@ -310,3 +328,4 @@ Wishlist:
 [espanso]: https://espanso.org/
 [OpenMoji]: https://openmoji.org/
 [GitLab]: https://about.gitlab.com/
+[Google Calendar]: #google-calendar
