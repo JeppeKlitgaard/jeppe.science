@@ -3,4 +3,4 @@
     {{ else if strings.HasPrefix .Destination "http" -}} target=_blank
     {{ else if strings.HasPrefix .Destination "https" -}} target=_blank
     {{ else  -}}{{- end }}
->{{ .PlainText | htmlEscape }}</a>
+>{{ .PlainText | htmlUnescape }}</a>
