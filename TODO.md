@@ -2,11 +2,15 @@
 
 A list of things that I should be doing at some point.
 
+## Infrastructure
+
+- Switch back to pypi `nbconvert` when next release is done
+
 ## Blog posts
 
-* Graph Blockchain for open source/permissive software licenses
-* Graph Blockchain for scientific citation
-* Using Fish shell
-* Actionable.email
+- Graph Blockchain for open source/permissive software licenses
+- Graph Blockchain for scientific citation
+- Using Fish shell
+- Actionable.email
 
 ## Site
