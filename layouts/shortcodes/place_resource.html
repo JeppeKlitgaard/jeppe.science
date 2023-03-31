@@ -1,0 +1,24 @@
+{{ $dest := .Get "dest" }}
+{{ $path := .Get "path" }}
+{{ $url := .Get "url" }}
+
+{{ $resource := "SCOPE" }}
+{{ if $path }}
+    {{ $resource = resources.Get $path }}
+{{ else if $url }}
+    {{ $resource = resources.GetRemote $url }}
+{{ else }}
+    {{ errorf "%s: Specify either 'path' or 'url'" .Page.File.Path }}
+{{- end -}}
+
+{{ with $resource }}
+    {{ $resource = . }}
+    {{ if $dest }}
+        {{ $resource = . | resources.Copy $dest }}
+    {{ end }}
+{{ else }}
+    {{ errorf "%s: Failed to retrieve resource!" .Page.File.Path }}
+{{- end -}}
+
+{{/*  We need to use the resource, but don't want to output it  */}}
+{{- last 0 $resource.Permalink -}}

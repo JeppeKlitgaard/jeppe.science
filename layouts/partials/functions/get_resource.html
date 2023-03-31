@@ -1,0 +1,22 @@
+{{/*
+   * get_resource(path=..., url=..., dest=...)
+   */}}
+
+{{/*  Obtain resource  */}}
+{{ $resource := nil }}
+{{ if .Get "path" }}
+    {{ $resource = resources.Get (.Get "path") }}
+{{ else if .Get "url" }}
+    {{ $resource = resources.GetRemote (.Get "url") }}
+{{ else }}
+    {{ errorf "%s: Specify either 'path' or 'url'" .Page.File.Path }}
+{{- end -}}
+
+{{ with $resource }}
+    {{ if .Get "dest" }}
+        {{ $resource = . | resources.Copy (.Get "dest") }}
+    {{ end }}
+    {{- return $resource -}}
+{{ else }}
+    {{ errorf "%s: Failed to retrieve resource!" .Page.File.Path }}
+{{- end -}}

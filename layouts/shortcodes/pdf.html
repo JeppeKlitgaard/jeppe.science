@@ -1,15 +1,26 @@
-{{- $resolved_url := "SCOPE" -}}
-{{- if .Get "path" -}}
-    {{- $resolved_url = resources.Get (.Get "path") -}}
-{{- else if .Get "url" -}}
-    {{- $raw_resource := resources.GetRemote (.Get "url") -}}
-    {{- if not $raw_resource -}}
-        {{- errorf "Could not retrieve resource!" -}}
-    {{- end -}}
-    {{- $resolved_url = ($raw_resource | resources.Copy "profile/cv.pdf").Permalink -}}
-{{- else -}}
-    {{- errorf "Specify either 'path' or 'url'" -}}
+{{ $dest := .Get "dest" }}
+{{ $path := .Get "path" }}
+{{ $url := .Get "url" }}
+
+{{ $resource := "SCOPE" }}
+{{ if $path }}
+    {{ $resource = resources.Get $path }}
+{{ else if $url }}
+    {{ $resource = resources.GetRemote $url }}
+{{ else }}
+    {{ errorf "%s: Specify either 'path' or 'url'" .Page.File.Path }}
 {{- end -}}
+
+{{ with $resource }}
+    {{ $resource = . }}
+    {{ if $dest }}
+        {{ $resource = . | resources.Copy $dest }}
+    {{ end }}
+{{ else }}
+    {{ errorf "%s: Failed to retrieve resource!" .Page.File.Path }}
+{{- end -}}
+
+{{ $resolved_url := $resource.Permalink }}
 
 <div class="container d-flex justify-content-center" style="width: 100%; height: 100vh">
 <object data='{{ $resolved_url }}#toolbar=1&navpanes=0&scrollbar=0"' type="application/pdf" width="100%" height="100%">
