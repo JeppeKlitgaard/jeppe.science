@@ -26,6 +26,10 @@ sections:
         {{< place_resource dest="/profile/documents/diploma_cansats_in_europe.pdf"  url="https://github.com/JeppeKlitgaard/CV/releases/latest/download/diploma_cansats_in_europe.pdf" >}}
         
         {{< place_resource dest="/profile/documents/diploma_science_club.pdf"  url="https://github.com/JeppeKlitgaard/CV/releases/latest/download/diploma_science_club.pdf" >}}
+
+        {{< place_resource dest="/profile/documents/award_community_effort.pdf"  url="https://github.com/JeppeKlitgaard/CV/releases/latest/download/award_community_effort.pdf" >}}
+
+        {{< place_resource dest="/profile/documents/diploma_highschool.pdf"  url="https://github.com/JeppeKlitgaard/CV/releases/latest/download/diploma_highschool.pdf" >}}
         
         {{< place_resource dest="/profile/documents/diploma_masterclass_phys_chem.pdf"  url="https://github.com/JeppeKlitgaard/CV/releases/latest/download/diploma_masterclass_phys_chem.pdf" >}}
 ---

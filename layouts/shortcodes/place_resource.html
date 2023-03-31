@@ -2,13 +2,15 @@
 {{ $path := .Get "path" }}
 {{ $url := .Get "url" }}
 
+{{ $page_path := page.File.Path }}
+
 {{ $resource := "SCOPE" }}
 {{ if $path }}
     {{ $resource = resources.Get $path }}
 {{ else if $url }}
     {{ $resource = resources.GetRemote $url }}
 {{ else }}
-    {{ errorf "%s: Specify either 'path' or 'url'" .Page.File.Path }}
+    {{ errorf "%s: Specify either 'path' or 'url'" $page_path }}
 {{- end -}}
 
 {{ with $resource }}
@@ -17,7 +19,7 @@
         {{ $resource = . | resources.Copy $dest }}
     {{ end }}
 {{ else }}
-    {{ errorf "%s: Failed to retrieve resource!" .Page.File.Path }}
+    {{ errorf "%s: Failed to retrieve resource!" $page_path }}
 {{- end -}}
 
 {{/*  We need to use the resource, but don't want to output it  */}}
