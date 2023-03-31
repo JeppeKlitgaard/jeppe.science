@@ -18,7 +18,7 @@ sections:
         ---
         {{< pdf dest="profile/cv.pdf" url="https://github.com/JeppeKlitgaard/CV/releases/latest/download/cv.pdf" >}}
 
-        
+        {{< noshow >}} --- DOCUMENTS --- {{</ noshow >}}
         {{< place_resource dest="/profile/documents/diploma_academy_talented_youth.pdf"  url="https://github.com/JeppeKlitgaard/CV/releases/latest/download/diploma_academy_talented_youth.pdf" >}}
         
         {{< place_resource dest="/profile/documents/diploma_IGCSE_english.pdf"  url="https://github.com/JeppeKlitgaard/CV/releases/latest/download/diploma_IGCSE_english.pdf" >}}
@@ -32,4 +32,10 @@ sections:
         {{< place_resource dest="/profile/documents/diploma_highschool.pdf"  url="https://github.com/JeppeKlitgaard/CV/releases/latest/download/diploma_highschool.pdf" >}}
         
         {{< place_resource dest="/profile/documents/diploma_masterclass_phys_chem.pdf"  url="https://github.com/JeppeKlitgaard/CV/releases/latest/download/diploma_masterclass_phys_chem.pdf" >}}
+
+        {{< noshow >}} --- REFERENCES --- {{</ noshow >}}
+        {{< place_resource dest="/profile/references/intropic.pdf"  url="https://github.com/JeppeKlitgaard/CV/releases/latest/download/intropic.pdf" >}}
+
+        {{< place_resource dest="/profile/references/ans_skole.pdf"  url="https://github.com/JeppeKlitgaard/CV/releases/latest/download/ans_skole.pdf" >}}
+
 ---
