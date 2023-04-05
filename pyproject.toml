@@ -6,14 +6,16 @@ authors = ["Jeppe Klitgaard <hi@jeppe.science>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
+# Project
 python = "^3.8"
 ipykernel = "^6.22.0"
 poethepoet = "^0.13.1"
 watchfiles = "^0.18.0"
-nbconvert = {git = "https://github.com/JeppeKlitgaard/nbconvert/", branch = "implement-output-base-pattern"}
-matplotlib = "^3.6.1"
-nbformat = "^5.8.0"
+nbconvert = "^7.3.0"
+
+# Used in notebooks
 lmfit = "^1.1.0"
+matplotlib = "^3.6.1"
 sympy = "^1.11.1"
 uncertainties = "^3.1.7"
 pandas = "^1.5.3"
