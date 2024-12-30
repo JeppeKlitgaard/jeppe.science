@@ -11,6 +11,7 @@ dependencies = []
 [dependency-groups]
 dev = [
     "mypy>=1.14.1",
+    "poethepoet>=0.32.0",
     "pre-commit>=4.0.1",
     "ruff>=0.8.4",
     "watchfiles>=1.0.3",
