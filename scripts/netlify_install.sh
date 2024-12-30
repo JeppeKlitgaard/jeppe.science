@@ -1,6 +1,5 @@
 #!/bin/bash
 set -ex
 
-pip install poetry==1.4.1
-poetry install
-poetry run poe prepare
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv run poe prepare

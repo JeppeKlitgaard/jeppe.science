@@ -1,49 +1,49 @@
-[tool.poetry]
-name = "jeppe.science"
+[project]
+name = "jeppe-science"
 version = "0.1.0"
-description = ""
-authors = ["Jeppe Klitgaard <hi@jeppe.science>"]
-license = "MIT"
+description = "Personal website and blog"
+readme = "README.md"
+authors = [{ name = "Jeppe Klitgaard", email = "hi@jeppe.science" }]
+requires-python = ">=3.13"
+dependencies = []
 
-[tool.poetry.dependencies]
-# Project
-python = "^3.8"
-ipykernel = "^6.22.0"
-poethepoet = "^0.13.1"
-watchfiles = "^0.18.0"
-nbconvert = "^7.3.0"
 
-# Used in notebooks
-lmfit = "^1.1.0"
-matplotlib = "^3.6.1"
-sympy = "^1.11.1"
-uncertainties = "^3.1.7"
-pandas = "^1.5.3"
-numpy = "^1.24.2"
-openpyxl = "^3.1.2"
-numdifftools = "^0.9.41"
+[dependency-groups]
+dev = ["mypy>=1.14.1", "ruff>=0.8.4", "watchfiles>=1.0.3"]
 
-[tool.poetry.dev-dependencies]
-mypy = "^0.982"
+render = ["ipykernel>=6.29.5", "nbconvert>=7.16.4"]
 
-[tool.poetry.group.dev.dependencies]
-black = "^23.1.0"
-pre-commit = "^3.2.1"
+# Env-* are used by notebooks
+env-base = ["numpy>=2.2.1", "pandas>=2.2.3", "scipy>=1.14.1"]
+
+env-graphics = ["matplotlib>=3.10.0", "seaborn>=0.13.2"]
+env-data = ["openpyxl>=3.1.5"]
+
+env-numerical = [
+    "lmfit>=1.3.2",
+    "numdifftools>=0.9.41",
+    "sympy>=1.13.3",
+    "uncertainties>=3.2.2",
+]
+
+[tool.uv]
+default-groups = [
+    "dev",
+    "render",
+    "env-base",
+    "env-graphics",
+    "env-data",
+    "env-numerical",
+]
 
 [tool.poe.tasks]
 # Dev tasks
-serve = {cmd = "hugo server --disableFastRender", help = "Run Hugo server"}
-nbconvert_watch = {cmd = 'watchfiles --ignore-paths var "jupyter nbconvert --config config/nbconvert_config.py" ./**/*.ipynb', help = "Run nbconvert sync"}
-up = {cmd = "./run_docker dev up", help = "Start Remark42 and Umami servers"}
-down = {cmd = "./run_docker dev down", help = "Stop Remark42 and Umami servers"}
+serve = { cmd = "hugo server --disableFastRender", help = "Run Hugo server" }
+nbconvert_watch = { cmd = 'watchfiles --ignore-paths var "jupyter nbconvert --config config/nbconvert_config.py" ./**/*.ipynb', help = "Run nbconvert sync" }
+up = { cmd = "./run_docker dev up", help = "Start Remark42 and Umami servers" }
+down = { cmd = "./run_docker dev down", help = "Stop Remark42 and Umami servers" }
 
 # Production tasks
-build = {cmd = "hugo --gc", help = "Run Hugo server"}
-nbconvert_build = {cmd = 'jupyter nbconvert --config config/nbconvert_config.py ./**/*.ipynb', help = "Run nbconvert sync"}
-prepare = [
-    "nbconvert_build"
-]
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+build = { cmd = "hugo --gc", help = "Run Hugo server" }
+nbconvert_build = { cmd = 'jupyter nbconvert --config config/nbconvert_config.py ./**/*.ipynb', help = "Run nbconvert sync" }
+prepare = ["nbconvert_build"]
