@@ -9,7 +9,12 @@ dependencies = []
 
 
 [dependency-groups]
-dev = ["mypy>=1.14.1", "ruff>=0.8.4", "watchfiles>=1.0.3"]
+dev = [
+    "mypy>=1.14.1",
+    "pre-commit>=4.0.1",
+    "ruff>=0.8.4",
+    "watchfiles>=1.0.3",
+]
 
 render = ["ipykernel>=6.29.5", "nbconvert>=7.16.4"]
 
